@@ -1,12 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900");
 
-/*
-	Future Imperfect by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -1518,7 +1512,7 @@
 		letter-spacing: 0.25em;
 		line-height: 1.65;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		text-transform: Capitalize;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1634,7 +1628,7 @@
 		font-size: 0.6em;
 		font-weight: 400;
 		letter-spacing: 0.25em;
-		text-transform: uppercase;
+		text-transform: Capitalize;
 		white-space: nowrap;
 	}
 
@@ -1723,7 +1717,7 @@
 		padding: 0 2.5em;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
+		text-transform: Capitalize;
 		white-space: nowrap;
 	}
 
@@ -2438,7 +2432,7 @@
 						font-weight: 400;
 						letter-spacing: 0.25em;
 						margin: -0.625em 0 1.7em 0;
-						text-transform: uppercase;
+						text-transform: Capitalize;
 					}
 
 					ul.posts article header > :last-child {
@@ -2516,7 +2510,7 @@
 				font-weight: 400;
 				letter-spacing: 0.25em;
 				margin: -0.625em 0 1.7em 0;
-				text-transform: uppercase;
+				text-transform: Capitalize;
 			}
 
 			.mini-post header .author {
@@ -2632,7 +2626,7 @@
 					font-weight: 800;
 					letter-spacing: 0.25em;
 					margin-top: 0.5em;
-					text-transform: uppercase;
+					text-transform: Capitalize;
 					white-space: nowrap;
 				}
 
@@ -2688,7 +2682,7 @@
 					line-height: 1;
 					margin: 0 0 0 2em;
 					padding: 0 0 0 2em;
-					text-transform: uppercase;
+					text-transform: Capitalize;
 				}
 
 					.post > footer .stats li:first-child {
@@ -2873,7 +2867,7 @@
 		letter-spacing: 0.25em;
 		line-height: 2.5;
 		margin-top: -1em;
-		text-transform: uppercase;
+		text-transform: Capitalize;
 	}
 
 /* Table */
@@ -3029,7 +3023,7 @@
 					font-size: 0.7em;
 					font-weight: 400;
 					letter-spacing: 0.25em;
-					text-transform: uppercase;
+					text-transform: Capitalize;
 				}
 
 		#header .main {
@@ -3336,7 +3330,7 @@
 		font-size: 0.5em;
 		font-weight: 400;
 		letter-spacing: 0.25em;
-		text-transform: uppercase;
+		text-transform: Capitalize;
 	}
 
 	body.single #footer {
@@ -3414,7 +3408,7 @@
 						letter-spacing: 0.25em;
 						margin-bottom: 0;
 						text-decoration: none;
-						text-transform: uppercase;
+						text-transform: Capitalize;
 					}
 
 					#menu .links > li a:hover h3 {
