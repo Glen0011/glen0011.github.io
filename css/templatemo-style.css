@@ -19,11 +19,6 @@ body {
 	overflow-x: hidden;
 }
 
-.tm-sidebar {
-	position: fixed;
-	width: 360px;
-}
-
 .tm-main-nav {
 	background-color: white;
 	font-size: 1.6667em;
