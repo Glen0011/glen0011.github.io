@@ -1,22 +1,5 @@
 /*
 
-	Theme Name: avana LLC
-
-	Template URI: 
-
-	Description: 
-
-	Author:
-
-	Author URI: 
-
-	License: 
-
-	License URI:
-
-	Version: 1.0
-
-	
 
 	1. Body style
 
@@ -156,9 +139,9 @@ a {
 
 a:focus, img:focus, button:focus, .btn:focus {outline: none;}
 
-::-moz-selection {background-color:#fb5353;color:#fff;text-shadow:none;}
+::-moz-selection {background-color:#ff005c;color:#fff;text-shadow:none;}
 
-::selection {background-color: #fb5353;color: #fff;text-shadow: none;}
+::selection {background-color: #ff005c;color: #fff;text-shadow: none;}
 
 @font-face {font-family: 'Open Sans', sans-serif;}
 
@@ -180,7 +163,7 @@ header[role="header"] nav ul > li{ font-weight:800; font-size:42px; display:bloc
 
 header[role="header"] nav ul > li > a{ display:block; line-height:72px; color:#404040}
 
-header[role="header"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#fb5353}
+header[role="header"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#ff005c}
 
 header[role="header"] nav #menu-button {width: 31px;font-size: 0;float: right;height: 19px;position: relative; z-index:70;
 
@@ -222,7 +205,7 @@ main[role="main-home-wrapper"] article[role="pge-title-content"] header,main[rol
 
 main[role="main-home-wrapper"] article[role="pge-title-content"] header h2,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2{ font-size:46px; line-height:53px; color:#404040; font-weight:800}
 
-main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span{ display:block; font-size:80px; color:#fb5353; padding-bottom:15px}
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span{ display:block; font-size:80px; color:#ff005c; padding-bottom:15px}
 
 main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:20px; line-height:30px; color:#454545}
 
@@ -236,11 +219,11 @@ footer[role="footer"] nav{ padding-top:37px; padding-bottom:43px}
 
 footer[role="footer"] nav > ul{ text-align:center; padding:0; margin:0}
 
-footer[role="footer"] nav > ul > li{ display: inline-block; text-transform:uppercase; font-size:15px; margin:0 13px}
+footer[role="footer"] nav > ul > li{ display: inline-block; text-transform:uppercase; font-size:20px; margin:0 13px}
 
 footer[role="footer"] nav > ul > li > a{ color:#9d9d9d}
 
-footer[role="footer"] nav > ul > li:hover a{ text-decoration:none; color:#fb5353}
+footer[role="footer"] nav > ul > li:hover a{ text-decoration:none; color:#ff005c}
 
 footer[role="footer"] ul[role="social-icons"]{ padding:0; margin:0; text-align:center; padding-bottom:40px;}
 
@@ -248,15 +231,15 @@ footer[role="footer"] ul[role="social-icons"] > li{ display: inline-block; margi
 
 footer[role="footer"] ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; background-color:#bbbbbb; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
 
-footer[role="footer"] ul[role="social-icons"] > li:hover a{ background-color:#fb5353}
+footer[role="footer"] ul[role="social-icons"] > li:hover a{ background-color:#ff005c}
 
-footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:12px; line-height:13px; color:#9c9c9c}
+footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:20px; line-height:13px; color:#9c9c9c}
 
 /*===== About ===*/
 
-main[role="main-inner-wrapper"] .about-content{ background-color:#fb5353; padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
+main[role="main-inner-wrapper"] .about-content{ background-color:#ff005c; padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
 
-main[role="main-inner-wrapper"] .about-content p{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px}
+main[role="main-inner-wrapper"] .about-content p{ font-size:20px; line-height:30px; color:#FFF; padding-bottom:20px}
 
 main[role="main-inner-wrapper"] .thumbnails-pan{ padding-top:30px}
 
@@ -264,13 +247,13 @@ main[role="main-inner-wrapper"] .thumbnails-pan section figure{ background-color
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure,main[role="main-inner-wrapper"] .thumbnails-pan section figure, img,main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption,section.blog-content figure,section.blog-content figure img,section.blog-content  article{transition-delay: 0s;transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption{ position:absolute; bottom:-50%; left:0; right:0; background-color:#fb5353; margin:0 69px; text-align:center; color:#FFF; padding-top:16px; padding-bottom:27px}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption{ position:absolute; bottom:-50%; left:0; right:0; background-color:#ff005c; margin:0 69px; text-align:center; color:#FFF; padding-top:16px; padding-bottom:27px}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h3{ font-size:21px; line-height:22px; font-weight:300}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h3{ font-size:20px; line-height:22px; font-weight:300}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h5{ text-transform:uppercase; font-size:13px; line-height:14px; font-weight:bold}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h5{ text-transform:uppercase; font-size:20px; line-height:14px; font-weight:bold}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover,section.blog-content:hover article{ background-color:#fb5353; color:#FFF}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover,section.blog-content:hover article{ background-color:#ff005c; color:#FFF}
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover img,section.blog-content:hover figure img{-webkit-transform: scale3d(1.08,1.08,2);transform: scale3d(1.08,1.08,2); opacity:0.5}
 
@@ -284,11 +267,11 @@ section.blog-content{ margin-bottom:29px}
 
 section.blog-content figure{ overflow:hidden; position:relative;background-color: rgba(255,255,255,0.4); cursor:pointer}
 
-section.blog-content figure .post-date{ text-align:center; color:#FFF; font-weight:800; font-size:14px; line-height:18px; text-transform:uppercase; display:block; background-color:#fb5353; width:130px; height:130px; position:absolute; left:0; top:0; padding-top:41px; z-index:50}
+section.blog-content figure .post-date{ text-align:center; color:#FFF; font-weight:800; font-size:20px; line-height:18px; text-transform:uppercase; display:block; background-color:#ff005c; width:130px; height:130px; position:absolute; left:0; top:0; padding-top:41px; z-index:50}
 
 section.blog-content figure .post-date span{ font-size:50px; line-height:35px; display:block}
 
-section.blog-content  article{ font-size:21px; line-height:30px; color:#FFF;  font-weight:800; color:#343434; padding-left:42px; padding-top:33px; padding-bottom:31px;}
+section.blog-content  article{ font-size:20px; line-height:30px; color:#FFF;  font-weight:800; color:#343434; padding-left:42px; padding-top:33px; padding-bottom:31px;}
 
 section.blog-content:hover figure img{ opacity:0.5}
 
@@ -298,7 +281,7 @@ article[role="pge-title-content"].contact-header{ padding-bottom:218px}
 
 article[role="pge-title-content"].contact-header p a{ color:#343434; padding-right:34px}
 
-article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-decoration:none}
+article[role="pge-title-content"].contact-header p a:hover{color:#ff005c; text-decoration:none}
 
 .demo-wrapper {width: 100%;margin: 0 auto;height:499px;}
 
@@ -310,7 +293,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .contat-from-wrapper{ padding:0 69px; margin-top:108px}
 
-.contat-from-wrapper input[type="text"],.contat-from-wrapper input[type="email"],.contat-from-wrapper textarea{ width:100%; display:block; outline:none; border-bottom:1px solid #bbbbbb; background-color:inherit; color:#404040; font-size:21px; line-height:23px; padding-bottom:24px}
+.contat-from-wrapper input[type="text"],.contat-from-wrapper input[type="email"],.contat-from-wrapper textarea{ width:100%; display:block; outline:none; border-bottom:1px solid #bbbbbb; background-color:inherit; color:#404040; font-size:20px; line-height:23px; padding-bottom:24px}
 
 .contat-from-wrapper input[type="text"]:focus,.contat-from-wrapper input[type="email"]:focus,.contat-from-wrapper textarea:focus{ border-bottom-color:#9f9e9e}
 
@@ -324,7 +307,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .contat-from-wrapper textarea{ border-bottom:1px solid #bbbbbb; border-left:none; border-right:none; border-top:none; height:77px; margin-top:56px}
 
-.contat-from-wrapper input[type="submit"]{ display:block; border:none; outline:none; width:200px; line-height:60px; text-transform:uppercase; font-size:21px; color:#FFF; font-weight:800; letter-spacing:2px; background-color:#e84d49; margin:41px auto; margin-bottom:0}
+.contat-from-wrapper input[type="submit"]{ display:block; border:none; outline:none; width:200px; line-height:60px; text-transform:uppercase; font-size:20px; color:#FFF; font-weight:800; letter-spacing:2px; background-color:#e84d49; margin:41px auto; margin-bottom:0}
 
 .contat-from-wrapper input[type="submit"]:hover{background-color:#f8524e}
 
@@ -332,17 +315,17 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .work-details,.blog-details{ padding:0 69px; margin-top:73px}
 
-.work-details header h2{ color:#343434; font-size:36px; font-weight:800}
+.work-details header h2{ color:#FF005C; font-size:36px; font-weight:800}/*==APP name==*/
 
-.work-details header a{ display:inline-block; color:#fb5353; font-size:18px;font-weight:800;padding-top:3px}
+.work-details header a{ display:inline-block; color:#0D0D0D; font-size:20px;font-weight:800;padding-top:3px}/*==A word is introduced==*/
 
 .work-details header a i{ color:#0d0d0d; padding-left:10px}
 
 .work-details header a:hover{ color:#0d0d0d; text-decoration:none}
 
-.work-details header a:hover i{ color:#fb5353}
+.work-details header a:hover i{ color:#ff005c}
 
-.work-details p{ font-size:16px; color:#666666; line-height:30px; margin-bottom:20px; font-weight:300}
+.work-details p{ font-size:20px; color:#666666; line-height:30px; margin-bottom:20px; font-weight:300}
 
 .work-details p strong{ font-weight:800}
 
@@ -356,13 +339,13 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .bog-header h3,.comments-pan h3,.commentys-form h4{ color:#404040;font-weight:800; padding-bottom:24px; display:block}
 
-.bog-header h3 span{ color:#fb5353}
+.bog-header h3 span{ color:#ff005c}
 
 .bog-header h2{ font-size:36px; font-weight:normal}
 
 .blog-details .enter-content{ margin-top:62px}
 
-.blog-details .enter-content p{ font-size:16px; line-height:30px; font-weight:300; margin-bottom:23px}
+.blog-details .enter-content p{ font-size:18px; line-height:30px; font-weight:300; margin-bottom:23px}/*＝＝introduce text＝＝*/
 
 .comments-pan{border-top:2px solid #dedede; padding-top:15px}
 
@@ -376,27 +359,27 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .comments-reply li section{ float:left; padding-left:30px; font-size:16px; line-height:30px; font-weight:300; color:#343434;width: 92%;}
 
-.comments-reply li section .date-pan{ font-size:14px; line-height:18px; padding-bottom:25px}
+.comments-reply li section .date-pan{ font-size:20px; line-height:18px; padding-bottom:25px}
 
-.comments-reply li section h4{font-weight:800; color:#404040; font-size:21px; margin-bottom:6px; margin-top:0}
+.comments-reply li section h4{font-weight:800; color:#404040; font-size:20px; margin-bottom:6px; margin-top:0}
 
-.comments-reply li section h4 a{ font-size:16px; color:#fb5353;font-weight:400; display:inline-block; padding-left:20px}
+.comments-reply li section h4 a{ font-size:20px; color:#ff005c;font-weight:400; display:inline-block; padding-left:20px}
 
 .reply-pan{ clear:both; display:block; margin-left:100px;padding-top:39px }
 
 .reply-pan li{ border-bottom:none;border-top:2px solid #dedede; padding-bottom:0; margin-bottom:0;padding-top:38px;}
 
-.commentys-form h4{ font-size:24px}
+.commentys-form h4{ font-size:30px}
 
 .commentys-form form{ margin-top:30px}
 
-.commentys-form input[type="text"],.commentys-form input[type="email"],.commentys-form input[type="url"],.commentys-form textarea{ font-size:21px; line-height:22px; color:#404040; padding-bottom:26px; border-bottom:2px solid #bbbbbb; width:100%; display:block; border-left:none; border-right:none; border-top:none; background-color:transparent; outline:none}
+.commentys-form input[type="text"],.commentys-form input[type="email"],.commentys-form input[type="url"],.commentys-form textarea{ font-size:20px; line-height:22px; color:#404040; padding-bottom:26px; border-bottom:2px solid #bbbbbb; width:100%; display:block; border-left:none; border-right:none; border-top:none; background-color:transparent; outline:none}
 
 .commentys-form textarea{ margin-top:57px}
 
 .commentys-form input[type="text"]:focus,.commentys-form input[type="email"]:focus,.commentys-form input[type="url"]:focus,.commentys-form textarea:focus{ border-bottom-color:#000}
 
-.commentys-form input[type="button"]{ padding:0 36px; text-transform:uppercase; display:inline-block; font-size:21px; line-height:60px; color:#FFF; font-weight: bold; text-align:center; border:none; outline:none; background-color:#fb5353; margin-top:50px}
+.commentys-form input[type="button"]{ padding:0 36px; text-transform:uppercase; display:inline-block; font-size:20px; line-height:60px; color:#FFF; font-weight: bold; text-align:center; border:none; outline:none; background-color:#ff005c; margin-top:50px}
 
 .commentys-form input[type="button"]:hover{ background-color:#ff5c5c}
 
