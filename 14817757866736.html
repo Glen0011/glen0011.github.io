@@ -1,0 +1,732 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  Make simple SVG stroke animation in Framer - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>Make simple SVG stroke animation in Framer</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2016/12/15</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='Framer.html'>Framer</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>A few days ago I upload a shot at Dribbble. In my initial idea I just wanted to draw 4 simple icons, but at last I made an animation for them, in Framer.</p>
+
+<span id="more"></span><!-- more -->
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*cCM4QQ7RsSfXiNZ85smEaw.gif" alt="1*cCM4QQ7RsSfXiNZ85smEa"/></p>
+
+<p>Here I going to explain how I made it, but I would rather call it a “trick”, not real coding skill. So don’t panic, things will be easy.</p>
+
+<p><br/></p>
+
+<p>I will give an simple example, once you understand this, you will understand the rest, and making your own animation is just a matter of time.</p>
+
+<p><br/></p>
+
+<p>Firstly, as we’re making SVG animations, we should prepare the SVG graphic before coding in Framer. </p>
+
+<p>我们正在制作SVG动画，我们应该在Framer中编码之前准备SVG图形。</p>
+
+<p>I choose Sketch as drawing tool, Adobe Illustrator is OK, too. I believe simply drawing icons won’t be difficult for you, but one thing that has to be noticed is you should set stroke position to <strong>center</strong>, SVG does not support stroke position property and all stroke will be centered.</p>
+
+<p>我相信简单的绘图图标对你来说不难，但有一点需要注意的是你应该将行程位置设置为中心，SVG不支持行程位置属性，所有行程都将居中。</p>
+
+<p><br/></p>
+
+<p>As Sketch supports not well on SVG format exporting, I choose Adobe Illustrator as tool to convert icon into SVG codes (you can directly copy shapes from Sketch to AI). <br/>
+Just select the path in AI, copy it, then paste it into any notepad tool, it will be converted into codes.</p>
+
+<p>由于Sketch支持SVG格式导出不好，我选择Adobe Illustrator作为工具将图标转换为SVG代码（你可以直接从Sketch复制形状到AI）。<br/>
+只需选择AI中的路径，复制它，然后将其粘贴到任何记事本工具，它将被转换为代码。</p>
+
+<p><br/></p>
+
+<p>Save your images as SVG file and then open it with notepad is another way to get SVG codes.</p>
+
+<p>将图像保存为SVG文件，然后使用记事本打开它是另一种获取SVG代码的方法。</p>
+
+<p><br/></p>
+
+<p>Well, now draw a rectangle.</p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*MTzX4e3E1HODOeNBo_vnug.png" alt=""/></p>
+
+<p><br/></p>
+
+<p>SVG shape code is mainly constructed with 3 parts:</p>
+
+<p>SVG形状代码主要由3部分构成：</p>
+
+<p><br/></p>
+
+<ul>
+<li><p>Canvas, or art board, decides the size of area where the shape to be drawn.</p></li>
+<li><p>画布或艺术板决定要绘制形状的区域的大小。</p></li>
+<li><p>CSS, decides the style of shape, like fill color, stroke and many other properties.</p></li>
+<li><p>CSS，决定了形状的样式，如填充颜色，笔触和许多其他属性。</p></li>
+<li><p>Path, decides how the shape look like, also the most complicated part, luckily with the help of tools like Sketch and AI we don’t have to consider such things.</p></li>
+<li><p>路径，决定如何形状看起来，也是最复杂的部分，幸运的是与工具，如素描和AI的帮助，我们不必考虑这样的事情。</p></li>
+</ul>
+
+<p><br/></p>
+
+<p>These are the SVG codes for the rectangle shape, you could easily find the corresponding part.</p>
+
+<p>这些是用于矩形形状的SVG代码，可以很容易地找到相应的部分。</p>
+
+<p><br/></p>
+
+<pre><code>&lt;!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In  --&gt;
+&lt;svg version=&quot;1.1&quot;
+  xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; xmlns:a=&quot;http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/&quot;
+  x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;88px&quot; height=&quot;106px&quot; viewBox=&quot;0 0 88 106&quot; style=&quot;enable-background:new 0 0 88 106;&quot;
+  xml:space=&quot;preserve&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+ .st0{fill:none;stroke:#03C0E6;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}
+&lt;/style&gt;
+&lt;defs&gt;
+&lt;/defs&gt;
+&lt;path class=&quot;st0&quot; d=&quot;M1,6c0-2.8,2.2-5,5-5h76c2.8,0,5,2.2,5,5v94c0,2.8-2.2,5-5,5H6c-2.8,0-5-2.2-5-5V6z&quot;/&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p><br/></p>
+
+<p>Remove the unnecessary part to make codes neat, and give its CSS class a name. You have to name its CSS class, or Framer cannot recognize which class should be used on each SVG path.</p>
+
+<p>删除不必要的部分使代码整齐，并给它的CSS类名称。 您必须命名其CSS类，或者Framer无法识别在每个SVG路径上应使用哪个类。</p>
+
+<p><br/></p>
+
+<pre><code>&lt;svg version=&quot;1.1&quot;
+  x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;88px&quot; height=&quot;106px&quot; viewBox=&quot;0 0 88 106&quot; style=&quot;enable-background:new 0 0 88 106;&quot;
+  xml:space=&quot;preserve&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+ .paper_left{fill:none;stroke:#03C0E6;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}
+&lt;/style&gt;
+&lt;path class=&quot;paper_left&quot; d=&quot;M1,6c0-2.8,2.2-5,5-5h76c2.8,0,5,2.2,5,5v94c0,2.8-2.2,5-5,5H6c-2.8,0-5-2.2-5-5V6z&quot;/&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p><br/></p>
+
+<p>Then, open Framer, do this:</p>
+
+<p><br/></p>
+
+<pre><code>paperLeft = new Layer
+  x: Align.center
+  y: Align.center
+  width: 88
+  height: 106
+  backgroundColor: &quot;null&quot;
+ paperLeft.html = &quot;&quot;&quot;
+  &lt;svg version=&quot;1.1&quot;
+    x=&quot;0px&quot; y=&quot;0px&quot; width=&quot;88px&quot; height=&quot;106px&quot; viewBox=&quot;0 0 88 106&quot; style=&quot;enable-background:new 0 0 88 106;&quot;
+    xml:space=&quot;preserve&quot;&gt;
+  &lt;style type=&quot;text/css&quot;&gt;
+   .paper_left{fill:none;stroke:#03C0E6;stroke-width:2;stroke-linecap:square;stroke-miterlimit:10;}
+   .paper_left{stroke-dashoffset:380;stroke-dasharray:380;animation:paper_left_dash 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) normal forwards;}
+   @keyframes paper_left_dash{to{stroke-dashoffset:0;}}
+  &lt;/style&gt;
+  &lt;path class=&quot;paper_left&quot; d=&quot;M1,6c0-2.8,2.2-5,5-5h76c2.8,0,5,2.2,5,5v94c0,2.8-2.2,5-5,5H6c-2.8,0-5-2.2-5-5V6z&quot;/&gt;
+  &lt;/svg&gt;&quot;&quot;&quot;
+</code></pre>
+
+<p><br/></p>
+
+<p>As you can see, I pasted the SVG codes after <strong>paperLeft.html</strong> (remember to use three quotation marks to start and end, or it will be of no effect). But something is different, I added these two lines of codes.</p>
+
+<p>如你所见，我在paperLeft.html之后粘贴了SVG代码（记住使用三个引号开始和结束，否则它将没有效果）。 但有点不同，我添加了这两行代码。</p>
+
+<p><br/></p>
+
+<pre><code>.paper_left{stroke-dashoffset:380;stroke-dasharray:380;animation:paper_left_dash 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) normal forwards;}
+
+[@keyframes](http://twitter.com/keyframes &quot;Twitter profile for @keyframes&quot;) paper_left_dash{to{stroke-dashoffset:0;}}
+</code></pre>
+
+<p><br/></p>
+
+<p>They’re the key to SVG animation. 它们是SVG动画的关键。</p>
+
+<p><br/></p>
+
+<p>In CSS stroke properties, there are two key parts. One is <strong>stroke-dashoffset</strong>, decides where the dash-and-gap effect shall start, another is <strong>stroke-dasharray</strong>, like its name tells, it’s an array, you can just simply put 1 or 2 or more numbers after it, to control how long the dash and the gap will be.</p>
+
+<p>在CSS stroke属性中，有两个关键部分。 一个是stroke-dashoffset，决定dash-and-gap效应开始的位置，另一个是stroke-dasharray，就像它的名字告诉，它是一个数组，你可以只是简单地放1或2或更多的数字后， 长的破折号和差距将会。</p>
+
+<p><br/></p>
+
+<p><code>.paper_left{stroke-dashoffset:380;stroke-dasharray:380;}</code></p>
+
+<p><br/></p>
+
+<p>An important thing you may want to ask is, what number should I input after <strong>stroke-dashoffset</strong> and <strong>stroke-dasharray</strong>? Yeah, if you input inappropriate numbers, things will go wrong.</p>
+
+<p>一个重要的事情你可能要问，在stroke-dashoffset和stroke-dasharray后，我应该输入什么数字？ 是的，如果你输入不适当的数字，事情会出错。</p>
+
+<p><br/></p>
+
+<p>Well, this is easy to decide, just input the length of your path. Calculating the circumference of rectangle or ellipse is easy, right? Even if you have an irregular shape, you could still estimate its circumference and test whether the animation is correct in Framer, just test a few more times and you will get the fitted number.</p>
+
+<p>好吧，这很容易决定，只需输入你的路径的长度。 计算矩形或椭圆的圆周很容易，对吧？ 即使你有一个不规则的形状，你仍然可以估计它的周长，并测试动画是否在Framer中正确，只是测试几次，你会得到适合的数字。</p>
+
+<p><br/></p>
+
+<p>The circumference of this rectangle is about 380 pixels, so I input 380.</p>
+
+<p>这个矩形的周长约为380像素，所以我输入380。</p>
+
+<p><br/></p>
+
+<p>So in this part of codes, we added dashes for the rectangle path. After this, we should add animation for it.</p>
+
+<p>所以在这部分代码中，我们为矩形路径添加了破折号。 之后，我们应该为它添加动画。</p>
+
+<p><br/></p>
+
+<pre><code>.paper_left{stroke-dashoffset:380;stroke-dasharray:380;animation:paper_left_dash 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) normal forwards;}
+</code></pre>
+
+<p><br/></p>
+
+<p>The values (separated by spaces) after <strong>animation:</strong> mean in order:</p>
+
+<p>动画后的值（用空格分隔）：按顺序：</p>
+
+<ul>
+<li><em>animation name</em></li>
+<li><em>animation duration</em> 持续时间</li>
+<li><em>curve (timing function)</em></li>
+<li><p>曲线（定时函数）</p></li>
+<li><p><em>how many times the animation should be played (if set to</em> <strong><em>normal</em></strong><em>, plays only once)</em></p></li>
+<li><p>应该播放多少次动画（如果设置为正常，只播放一次）</p></li>
+<li><p><em>animation direction (usually set to</em> <strong><em>forwards</em></strong><em>)</em></p></li>
+<li><p>动画方向（通常设置为向前）</p></li>
+</ul>
+
+<p><br/></p>
+
+<p>Now it seems we’ve added an animation for the rectangle, but we haven’t tell how this animation is going to move. So the following codes should be added, too.</p>
+
+<p>现在看来我们已经为矩形添加了一个动画，但是我们还没有告诉这个动画将如何移动。 因此，也应该添加以下代码。</p>
+
+<p><br/></p>
+
+<pre><code>[@keyframes](http://twitter.com/keyframes &quot;Twitter profile for @keyframes&quot;) paper_left_dash{to{stroke-dashoffset:0;}}
+</code></pre>
+
+<p><br/></p>
+
+<p>Like its name, it decides the keyframes of animation called <strong>paper_left_dash</strong>. Remember, if you want this stroke to be drawn “from 0 to 1”, you should set the <strong>stroke-dashoffset</strong> in <strong>@keyframes</strong> to <strong>zero</strong>. If you want this stroke to be drawn “from 1 to 0” (to be played reversely), the codes should be like this:</p>
+
+<p>像它的名字，它决定了称为paper_left_dash的动画的关键帧。 记住，如果你希望这个笔画被绘制为“从0到1”，你应该将@keyframes中的stroke-dashoffset设置为零。 如果你想要这个笔画被绘制“从1到0”（反向播放），代码应该是这样的：</p>
+
+<p><br/></p>
+
+<pre><code>.paper_left{stroke-dashoffset:760;stroke-dasharray:380;animation:paper_left_dash 0.75s cubic-bezier(0.39, 0.575, 0.565, 1) normal forwards;}
+
+[@keyframes](http://twitter.com/keyframes &quot;Twitter profile for @keyframes&quot;) paper_left_dash{to{stroke-dashoffset:380;}}
+</code></pre>
+
+<p><br/></p>
+
+<p>As you can see, <strong>stroke-dashoffset</strong> is set to double the circumference of this rectangle, and another <strong>stroke-dashoffset</strong> in <strong>@keyframes</strong> is set to equal the circumference of this rectangle. This will make your stroke animation reversed.</p>
+
+<p>如您所见，stroke-dashoffset设置为该矩形的圆周的两倍，而@keyframes中的另一个stroke-dashoffset设置为等于该矩形的圆周。 这将使你的笔画动画逆转。</p>
+
+<p><br/></p>
+
+<p>Now you shall come to understand the essence of SVG stroke animation, it’s just moving this position where the dash effect starts, to make an “illusion” that the stoke is been “drawing”.</p>
+
+<p>现在你会了解SVG笔画动画的本质，它只是移动这个位置，破折号效果开始，使一个“幻觉”，斯托克正在“绘图”。</p>
+
+<p><br/></p>
+
+<p>To control the start and end point of this animation is not hard work. Just cut the path using Sketch <strong>Scissor</strong> tool. Wherever on this path you want animation to start, just cut it. If the start and end point is reversed, use Sketch <strong>Reverse Order</strong> tool, and convert it into SVG codes again.</p>
+
+<p>控制这个动画的开始和结束点不是很难的工作。 只是剪切路径使用素描剪刀工具。 无论在这个路径上，你想要开始动画，只是剪切它。 如果起点和终点相反，使用草图倒置顺序工具，并再次将其转换为SVG代码。</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*EHjVw3dz898sQrF9n3G80g.png" alt=""/></p>
+
+<p><br/></p>
+
+<p>You should have already noticed for a long time that the animation is played automatically. We will use <strong>Utils.insertCSS</strong> to control its play status.</p>
+
+<p>你应该已经注意到了很长时间的动画自动播放。 我们将使用Utils.insertCSS来控制其播放状态。</p>
+
+<p><br/></p>
+
+<pre><code>paperLeftAnimation = &quot;&quot;&quot;.paper_left{animation-play-state:paused;}&quot;&quot;&quot;
+
+Utils.insertCSS(paperLeftAnimation)
+</code></pre>
+
+<p><br/></p>
+
+<p>This will insert some other CSS codes into previous CSS class named <strong>paper_left</strong>, and make its animation pause.</p>
+
+<p>这将插入一些其他CSS代码到名为paper_left的前面的CSS类，并使其动画暂停。</p>
+
+<p><br/></p>
+
+<p>At the place where you need this animation to be played, just add another 2 lines of code like this, which will make this animation run.</p>
+
+<p>在你需要播放这个动画的地方，只需添加另外两行代码，这将使这个动画运行。</p>
+
+<p><br/></p>
+
+<pre><code>paperLeftAnimation = &quot;&quot;&quot;.paper_left{animation-play-state:running;}&quot;&quot;&quot;
+
+Utils.insertCSS(paperLeftAnimation)
+</code></pre>
+
+<p><br/></p>
+
+<p>Well, now I think you’ve fully understand how to add and control a SVG animation in Framer. Of course this isn’t the most elegant way, it’s just one of the ways lead to Rome.</p>
+
+<p>好了，现在我想你已经完全了解如何在Framer中添加和控制SVG动画。 当然，这不是最优雅的方式，它只是导致罗马的方式之一。</p>
+
+<p><br/></p>
+
+<p>And the most “tricky” part, how did I make the line move from the right edge, and “transform” into another shape, and this shape transforms into line again, then moves to the left edge?</p>
+
+<p>而最“棘手”的部分，我是如何使线从右边缘移动，并“变换”成另一种形状，这种形状再次转换为线，然后移动到左边缘？</p>
+
+<p><br/></p>
+
+<p>This is really simple.</p>
+
+<pre><code>paperLeftLine = new Layer
+  parent: illustration01
+  width: 0
+  height: contentBorderWidth
+  backgroundColor: &quot;#03C0E6&quot;
+  x: illustration01.maxX + cardBodyImageMarginHorizontal
+  y: paperLeft.maxY - contentBorderWidth
+  index: 3
+
+ paperLeftLineMoveIn = new Animation
+  layer: paperLeftLine
+  properties:
+   width: (illustration01.width - paperLeft.minX) + cardBodyImageMarginHorizontal
+   x: paperLeft.maxX - paperBorderRadius - contentBorderWidth
+  time: 0.4
+  curve: &quot;cubic-bezier(0.55, 0.055, 0.675, 0.19)&quot;
+
+ paperLeftLineMoveIn2 = new Animation
+  layer: paperLeftLine
+  properties:
+   width: contentBorderWidth
+   x: paperLeft.maxX - paperBorderRadius - contentBorderWidth
+  time: 0.3
+  curve: &quot;cubic-bezier(0.215, 0.61, 0.355, 1)&quot;
+
+ paperLeftLineMoveIn.on Events.AnimationEnd, -&gt;
+  paperLeftLineMoveIn2.start()
+
+ paperLeftLineMoveIn2.on Events.AnimationEnd, -&gt;
+  paperLeftLine.x = paperLeft.minX + paperBorderRadius
+</code></pre>
+
+<p><br/></p>
+
+<p>As you can see, it’s just another layer, with some simple animation. What you need to do is carefully align it with the previous stroke animation, to make them seem to be “continuous”. Well, just a matter of time, right?</p>
+
+<p>如你所见，它只是另一层，有一些简单的动画。 你需要做的是仔细对齐它以前的笔画动画，使他们似乎是“连续”。 好吧，只是时间问题，对吧？</p>
+
+<p><br/></p>
+
+<p>For more detail you can check the .framer file of this animation:</p>
+
+<p>更多的细节，你可以检查这个动画的.framer文件：</p>
+
+<p><br/></p>
+
+<p>I just repeatedly used those “tricks” above to finally finish the animation, nothing is too special. Be patient and adjust every layer precisely, and consider the sequence of every animation carefully, this is what beyond coding.</p>
+
+<p>我只是反复使用这些“技巧”上面的终于完成动画，没有什么是太特别。 耐心，精确地调整每一层，仔细考虑每一个动画的序列，这是超越编码。</p>
+
+<p><br/></p>
+
+<p>With the help of SVG, it’s possible for you to draw everything by codes, and use less images, which will make your prototype simpler.</p>
+
+<p><br/></p>
+
+<p><br/></p>
+
+<p>Author: <a href="https://dribbble.com/Airytram">Airytram</a></p>
+
+<p><br/></p>
+
+<p>QMUI Icons[Sketch]</p>
+
+<p><a href="https://dribbble.com/shots/3064118-QMUI-Icons-Sketch">https://dribbble.com/shots/3064118-QMUI-Icons-Sketch</a></p>
+
+<p><br/></p>
+
+<p>QMUI Icons[framer]</p>
+
+<p><a href="http://share.framerjs.com/fvip45z0jvr5/">http://share.framerjs.com/fvip45z0jvr5/</a></p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14820292300905.html" 
+          title="Previous Post: Designers shouldn’t code. They should study business.">&laquo; Designers shouldn’t code. They should study business.</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14814629767363.html" 
+          title="Next Post: Create a Clueless Racecar Driver Illustration in Photoshop">Create a Clueless Racecar Driver Illustration in Photoshop &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+<a class="facebook" href="https://www.facebook.com/profile.php?id=100013395165605" title="Facebook">Facebook</a>
+
+
+
+
+
+
+<a class="weibo" target="_blank" href="http://weibo.com/2182848997/profile?topnav=1&wvr=6" title="weibo">Weibo</a>
+<a class="twitter" target="_blank" href="https://twitter.com/Glen__Y" title="Twitter">Twitter</a>
+
+
+  <a class="facebook" target="_blank" href="atom.xml" title="Facebook">Facebook</a>
+  <a class="weibo" target="_blank" href="atom.xml" title="weibo">Weibo</a>
+  <a class="twitter" target="_blank" href="atom.xml" title="Twitter">Twitter</a>
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="14855087860472.html">Export Presets, Touch Bar, and More in Sketch 42</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14850425954917.html">Design like a Developer</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14838911325927.html">UI设计的切图命名规则(持续补充)</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14835157765602.html">ACCD本科产品系主任Karen Hofmann专访</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14832821542116.html">在Framer中响应多个设备</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>

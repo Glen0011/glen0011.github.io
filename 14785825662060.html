@@ -1,0 +1,901 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  IOS交互设计基础 - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>IOS交互设计基础</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2016/11/8</span>
+
+          
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <span id="more"></span><!-- more -->
+
+<h2 id="toc_0">一、栏</h2>
+
+<h3 id="toc_1">1、状态栏</h3>
+
+<p>状态栏：展示了设备及其周围环境的重要信息</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-45a97b96ecf43866.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p>（1）状态栏是透明的</p>
+
+<p><br /></p>
+
+<p>（2）避免滚动内容直接透过状态栏</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p><br /></p>
+
+<h3 id="toc_2"><strong>2、导航栏</strong></h3>
+
+<p>导航栏能够实现应用不同信息层级间的导航</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-fe7ebee69994431c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（1）避免过多的控件填满你的导航栏</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-af62df04be5c3cac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（2）确保你自定义的导航栏在你的应用的每个视图中都有一致的外观与体验</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-2a46a01900d23dda.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：微信读书导航栏</p>
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="toc_3">3、工具栏</h3>
+
+<p>工具栏中放置用户在当前情境下最常用的指令</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-af667214ad86fc34.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：微信阅读书籍阅读界面工具栏</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>（1）尽量避免在工具栏中放置偶尔用到的指令</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-ac67bf93ad0ffd66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（2）工具栏中的所有指令和操作是针对当前屏幕和视图的</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-c2872162c279cbc8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：pmcaff中内容详情页工具栏，包含针对当前内容的功能按钮</p>
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="toc_4">几种常见的工具栏形式：</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-a774edd35e78ab4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：淘宝购物车工具栏，用于编辑购物车中商品，位于标签栏之上</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-1c712da2fcea116a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：知乎日报内容详情页工具栏，包含针对当前内容的功能按钮以及导航按钮，位于屏幕底部</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-a32c98cbb1243b88.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：微博编辑消息页面的工具栏</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+<p>工具栏常用在以下几种情景中：</p>
+
+<p>（1）内容详情页中，放置针对当前内容的操作按钮</p>
+
+<p>（2）图文编辑页面中，放置编辑时用到的工具按钮</p>
+
+<p>（3）针对列表项中的内容进行编辑。例如：购物车中商品、网盘中文件列表</p>
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="toc_5">4、标签栏</h3>
+
+<p>标签栏让用户在不同的子视图、任务和模式中切换</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-214858084b070dff.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（1）标签栏最多一次可承载5个标签</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-9c5809b7d0e981e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（2）标签栏常应用应用的的主界面中，来组织整个应用层面的信息结构，也就是我们常说的几种主导航方式之一</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-9c6c447f382c7639.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<blockquote>
+<p>PS：</p>
+
+<p>（1）标签栏常被用作主导航方式来布置产品结构</p>
+
+<p>（2）标签栏标签超过5个时，视觉上略显拥挤，平行主任务过多，容易给用户到来困扰</p>
+</blockquote>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-ea56ac6359289716.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：口袋记账当前版本标签栏</p>
+</blockquote>
+
+<p><br /></p>
+
+<h3 id="toc_6">5、搜索栏</h3>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-f4b1b8e694c368d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：Safari搜索栏</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>搜索栏中可出现一下可选元素：占位符文本（文案提示）、书签按钮、清除按钮等</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-84c6a0a00d91dd7b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：在行搜索框</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-66595c26a68a12cc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：UC浏览器搜索栏</p>
+</blockquote>
+
+<p><br /></p>
+
+<h2 id="toc_7">二、临时视图</h2>
+
+<h3 id="toc_8">1、警告框</h3>
+
+<p>警告框用于告知用户一些会影响到他们使用APP或设备的重要信息</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-6ac9c871a46a3463.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（1）严格限制app中警告框的个数，并且保证每一个保证框，都能提供重要的信息或者游泳的选项</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-6edf9c2d43d4af22.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（2）警告框应简明扼要的告诉用户当前所处的情景，并且告诉用户他们可以做什么</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-beae8ff5a674fc83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（3）尽可能地避免使用“你”、“你的”、“我”、“我的”等字眼出现</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-9bc7d054e81c19a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（4）避免在文案中详细描述“该按那个按钮”而导致文本过长</p>
+
+<p><br /></p>
+
+<h3 id="toc_9">2、操作列表</h3>
+
+<p>操作列表展示了与用户触发的操作直接相关的一些列选项</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-a36c790f16d16a36.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：下厨房上传作品操作列表</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>（1）提供完成一项任务的不同方法，这样多种操作方式不会永久的占用UI 的空间</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-6289f5055b29fe28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：探探上传照片或者视频</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>（2）在完成一项可能有风险的操作前获得用户的确认</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-b5267bfa189e74f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：腾讯新闻删除评论</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>（3）避免让用户滚动操作列表</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-7a553cc6984c6a0d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<h3 id="toc_10">3、模态视图</h3>
+
+<p>模态视图为当前的任务或当前工作流程提供了一种独立的功能，为用户提供了一种不脱离主任务的方式去完成一个任务或者获得信息</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-c1ea718693821206.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：腾讯微云添加笔记</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>（1）模态视图通常会包含一个完成按钮和一个取消按钮（可根据实际功能/情景来进行调整）</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-b5259a333fadba00.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<blockquote>
+<p>注：简书编辑文章</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>（2）能占据整个屏幕，也可能占据屏幕的一部分</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1342013-3cd96c7c0d0f90e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""/></p>
+
+<p><br /></p>
+
+<p>（3）选择一个适当的动画来展示模态视图</p>
+
+<blockquote>
+<p>垂直出现：模态视图从底部边缘滑入屏幕，也同样从屏幕底部滑出</p>
+
+<p>弹出：当前视图从右往左水平滑动，显示模态视图，离开模态视图时，原先的父视图从左滑回屏幕右边</p>
+</blockquote>
+
+<p><br /></p>
+
+<blockquote>
+<p><strong>总结：</strong></p>
+
+<p>（1）模态模型就行是导航模型中死胡同，它暂时覆盖应用正常的操作页面，让你去完成和父页面内容相关的一些任务</p>
+
+<p>（2）通常莫泰视图都是由屏幕底部滑出，覆盖原有页面</p>
+
+<p>（3）模态视图通常被用来添加或编辑内容</p>
+
+<p>（4）模态视图属于正常流程上的一个临时支路</p>
+</blockquote>
+
+<p><br /></p>
+
+<h2 id="toc_11">三、控件</h2>
+
+<p><strong>1、活动指示器</strong></p>
+
+<p>活动指示器表明进程或任务正在进行中</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：微博清空缓存</p>
+
+<p>（1）当任务加载和进行时旋转，任务完成后自动消失（针对系统默认样式）</p>
+
+<p>（2）不支持用户交互行为</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：Pinterest添加账户</p>
+
+<p><strong>2、日期时间选择器</strong></p>
+
+<p>日期时间选择器展示关于日期和时间的组件</p>
+
+<p>（1）最多可以展示四个独立的滑轮，每一个滑轮列表标识一个不同的值</p>
+
+<p>（2）日期选择器的大小与与iPhone键盘的大小相同，并且不可该更</p>
+
+<p>（3）包括四种模式，每种模式包含一组不同的值</p>
+
+<p><strong>日期和时间：日期、小时、分钟</strong></p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p><strong>时间：小时和分钟以及可选的上午/下午</strong></p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p><strong>日期：年、月、日</strong></p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p><strong>倒计时：小时、分钟，可以精确的设定总共的倒计时时间</strong></p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p><strong>3、网络活动指示器</strong></p>
+
+<p>网络活动指示器在状态栏中出现，标识网络活动正在进行。例如：当重新进入app，系统进行自动刷新时，显示正在进行网络活动</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p><strong>4、页面控件</strong></p>
+
+<p>页面控件告诉用户打开了多少个视图以及他们正处在哪一个视图当中</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：微信图片浏览</p>
+
+<p>（1）不支持用户访问不连续的视图（不能直接跳转至相邻视图以外的视图）</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：掌盟</p>
+
+<p>（2）默认情况下，不支持视图之间的导航</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：天气</p>
+
+<p>（3）页面控件是为所有视图平等的场景设计的</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：豆瓣阅读</p>
+
+<p>（4）避免显示太多点，超过10个很难让用户一目了然</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：下厨房</p>
+
+<blockquote>
+<p>总结：页面控件多用来展示平行层级的内容信息，在有限的屏幕控件内延展可以展示的内容数量，左右滑动切换，也很适合用户单手操作浏览信息</p>
+</blockquote>
+
+<p>5、选择器</p>
+
+<p>选择器包含了一组值，用户可以从中选择一个相应的值</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（1）选择器是日期时间选择器的通用模式</p>
+
+<p>（2）不可以自定义大小（跟iPhone键盘相同）</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（3）当你需要展示的备选数量很多时，可以考虑使用表格视图</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<blockquote>
+<p>总结：选择器多用在选择地区、年龄、性别等编辑操作中，用来选择一系列同一类别下的子项</p>
+</blockquote>
+
+<p>6、刷新控件</p>
+
+<p>刷新控件执行用户触发的内容刷新</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：下厨房</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：知乎</p>
+
+<p>（1）刷新控件可以出现在标题中</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（2）使用了刷新控件，同时也应支持自动刷新，刷新控件给用户多一个选择</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（3）可以根据产品风格设计相应的刷新控件样式</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>7、分段控件</p>
+
+<p>分段控件是一组分段的线性组合，每一个分段的作用类似按钮，点击之后切换到相应的视图</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（1）有两个或以上的分段组成，每一个分段的宽度相同</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（2）可以包含文字或图片</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（3）一个分段控件最多包含五个分段</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（4）不要在一个分段中混用文字或图片</p>
+
+<blockquote>
+<p>注意：Android中类似的控件为固定选项卡以及滚动选项卡，可以左滑或右滑在不同的视图之间进行切换，并且可以扩展更多的分类视图，更加便于用户操作。iOS中也大量采用这种交互方式，在视图之间可以左滑右滑切换视图，用户操作上更加地便捷</p>
+</blockquote>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：网易云音乐</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：NEXT</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：36氪</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：QQ空间</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>注：知乎</p>
+
+<p>8、滑块</p>
+
+<p>滑块允许用户在一个限定范围内调整某个数值或进程</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<blockquote>
+<p>总结：滑块多用来控制音量、控制进度、控制大小（字体）、控制亮度等，例如在线阅读书籍、在线播放视频等沉浸式体验中</p>
+</blockquote>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>9、开关按钮</p>
+
+<p>开关按钮展示了两个互斥的选项或状态</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（1）开关按钮仅在表格视图中可用</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<blockquote>
+<p>另：开关的操作方式隐喻了电灯开关，两种操作分别对应两种不同的功效</p>
+</blockquote>
+
+<p>10、系统按钮</p>
+
+<p>系统按钮执行app中定义的行为</p>
+
+<p>（1）默认状态下不含边界，也不含背景图</p>
+
+<p>（2）可以是图标或者文字标题</p>
+
+<p>（3）支持自定义样式，如描边或者加背景图</p>
+
+<blockquote>
+<p>注意：按钮的几种状态：正常状态、选中状态、禁用状态，每种状态所对应的按钮样式</p>
+</blockquote>
+
+<p>11、文本框</p>
+
+<p>（1）根据输入内容的类型来指定不同的键盘</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（2）输入框中增加帮助用户理解的提示文字</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<p>（4）合适的情境下，在文本框右侧加入清除按钮</p>
+
+<p><img src="media/14785825662060/1240." alt=""/></p>
+
+<blockquote>
+<p>注意：文本框与文本视图（下一篇中会提到）的区别，文本框只能输入单行文本，例如通常用来填写用户名、密码、手机号等等，适合增加清除按钮</p>
+</blockquote>
+
+<p>文／Ronie（简书作者）<br/>
+原文链接：<a href="http://www.jianshu.com/p/29e0f2b202b5#">http://www.jianshu.com/p/29e0f2b202b5#</a><br/>
+著作权归作者所有，转载请联系作者获得授权，并标注“简书作者”。</p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14788463826284.html" 
+          title="Previous Post: 手把手教你开发电商类小程序 Vol.1 | 实战教程">&laquo; 手把手教你开发电商类小程序 Vol.1 | 实战教程</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14782499236169.html" 
+          title="Next Post: 五分钟快速设计出一个LOGO">五分钟快速设计出一个LOGO &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+
+
+
+
+
+
+
+
+
+
+
+  <a class="facebook" target="_blank" href="atom.xml" title="Facebook">Facebook</a>
+  <a class="weibo" target="_blank" href="atom.xml" title="weibo">Weibo</a>
+  <a class="twitter" target="_blank" href="atom.xml" title="Twitter">Twitter</a>
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="14855087860472.html">Export Presets, Touch Bar, and More in Sketch 42</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14850425954917.html">Design like a Developer</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14838911325927.html">UI设计的切图命名规则(持续补充)</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14835157765602.html">ACCD本科产品系主任Karen Hofmann专访</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14832821542116.html">在Framer中响应多个设备</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,582 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  手把手教你开发电商类小程序 Vol.1 | 实战教程 - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>手把手教你开发电商类小程序 Vol.1 | 实战教程</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2016/11/11</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html'>微信小程序</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>玩物志小程序跟常见的电商平台类似，<strong>主要由首页、分类页、商品列表页、商品详情页、购物车、订单结算页和个人中心等几大模块组成。</strong></p>
+
+<span id="more"></span><!-- more -->
+
+<p>分几期来对每个模块的关键点作详细说明。</p>
+
+<p>在此过程中，本文也会穿插介绍一些常用简单内置组件的使用，最再后利用小程序的 <code>template</code> 模板，对自定义组件化开发的实现提供三种参考模式。</p>
+
+<p><br /></p>
+
+<h2 id="toc_0">准备开工</h2>
+
+<p>我们先新建一个文件夹 <code>coolbuy</code> 作为项目目录，里面包含：</p>
+
+<ul>
+<li><p><code>common</code> 目录——用来放置项目公用的文件</p></li>
+<li><p><code>pages</code> 目录——项目页面开发目录，里面的每个子目录代表一个独立页面，分别包含与目录同名的 <code>.wxml</code>（必须），<code>.wxss</code>，<code>.js</code>（必须）和 <code>.json</code> 文件</p></li>
+<li><p><code>templates</code>目录——用来放置自定义的组件</p></li>
+<li><p><code>utils</code> 目录——用来放置工具类 js 文件</p></li>
+<li><p><code>app.js</code>——小程序逻辑</p></li>
+<li><p><code>app.json</code>——小程序公共设置</p></li>
+<li><p><code>app.wxss</code>——小程序公共样式表</p></li>
+</ul>
+
+<p><br /></p>
+
+<h2 id="toc_1">轮播 banner 样式定义</h2>
+
+<p>接下来，是首页的实现。</p>
+
+<p>首页在 <code>pages/index</code> 目录下，包括 <code>index.wxml</code>, <code>index.wxss</code>,  三个文件。</p>
+
+<p>首页的完整 Demo 图如下：</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_gif/dzvQgHlKewwZF5IQfKA7Bic5USWh2G8ySPcCZSyjWwxVKHVZYoibz1PmcIL8IzdM64QgtFeQSB1KSH61csE9aT5A/0?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>第一步，实现 banner 轮播图，来看代码：</p>
+
+<pre><code>/*** index.wxml ***/
+&lt;swiper class=&quot;banner-swiper&quot;&gt;
+indicator-dots=&quot;{{indicatorDots}}&quot;
+autoplay=&quot;{{autoplay}}&quot;
+interval=&quot;{{interval}}&quot;
+duration=&quot;{{duration}}&quot;&gt;
+&lt;swiper-item class=&quot;swiper-item&quot; wx:for=&quot;{{banners}}&quot;&gt;
+&lt;navigator url=&quot;../detail/detail?id={{item.productId}}&quot;&gt;
+&lt;image src=&quot;{{item.image}}&quot; class=&quot;slide-image&quot;&gt;&lt;/image&gt;
+&lt;/navigator&gt;
+&lt;/swiper-item&gt;
+&lt;/swiper&gt;
+</code></pre>
+
+<p>值得注意的是，<code>image</code> 组件会有一个默认的样式。</p>
+
+<p>官方文档中说 <code>image</code> 组件默认宽度 300px、高度 225px，但是，根据开发者工具 v0.10.102800 版中的测试，<code>image</code> 组件的默认样式为：</p>
+
+<pre><code>image{
+    width:320px
+    height:240px
+    display:inline-block
+    overflow:hidden
+}
+</code></pre>
+
+<p>这个值可能会在小程序以后的升级中进行修改。</p>
+
+<p>跟 <code>image</code> 组件类似，大多数小程序内置组件都会有自己的默认样式，初学者可以利用开发都工具中的 Wxml Panel，多了解一下这些组件的默认样式，可以避免很多由组件默认样式引起的问题。</p>
+
+<p>我们要根据实际情况给它重新定义一个宽高值：</p>
+
+<pre><code>/*** index.wxss ***/
+.slide-image{
+width:750rpx;
+height:450rpx;
+}
+</code></pre>
+
+<p>在这里使用了小程序特有的 rpx 单位，这个尺寸单位会放到第二期的页面布局中来讲。</p>
+
+<p>另一个注意点是，不要将大图片放到项目目录中，因为小程序代码总大小不能超过 1 MB，而大图片会占用大量的空间，所以要尽量避免在项目目录中放置大图片。</p>
+
+<p>如有需要，建议只在项目目录中放置少量 icon 类的小图片，其他大图片可以上传到自己的服务器或者网盘中，然后在 <code>src</code> 中设置图片的网络资源地址。</p>
+
+<p>在手机测试或者正式上线之前，要注意是否有引用了本地大图片导致代码超出大小限制的问题。</p>
+
+<p><br /></p>
+
+<h2 id="toc_2">准备获取 banner 数据，并绑定到视图层</h2>
+
+<p>接下来，我们看看数据的绑定：</p>
+
+<pre><code>/***index.js***/
+Page({
+data:{
+banners:[], //初始化一个banners数组
+
+//以下四项设置swiper组件的参数值
+indicatorDots:true,
+autoplay:true, //开启自动切换
+interval:5000, //自动切换时间间隔
+duration:1000 //滑动动画时长
+}
+});
+</code></pre>
+
+<p>在 <code>Page</code> 里的 <code>data</code> 会以 <code>JSON</code> 的形式由逻辑层传至视图层，然后在视图层中使用 Mustache 语法（双大括号）接收传入的数据，实现动态数据的数据绑定。</p>
+
+<p>经过绑定后的数据变动可以在视图中实时反应，也可以通过开发者工具中的 AppData Panel 中查看和编辑页面中的所有 <code>data</code> 数据。</p>
+
+<p><strong>当你不知道 <code>data</code> 数据是否被设置成功的时候，可以到 AppData Panel 来查看一下，免去了手动打 </strong><code>console.log</code><strong> 进行调试的麻烦。</strong></p>
+
+<p>实现动态数据绑定的另一个方式是使用 <code>this.setData()</code> 方法，<code>this</code> 在这里代表的是 <code>Page，</code>而 <code>setData</code> 是在 <code>PageX.prototype</code> 中的方法，所以 <code>this.setData()</code> 实际上访问的是 <code>Page.prototype.setData()</code>。</p>
+
+<p>它可以用来新增和修改 <code>this.data</code> 里的值，同时还有一个重要的功能是将数据从逻辑层发送到视图层，从而实时改变页面的状态，保持逻辑层和视图层数据的一致性。</p>
+
+<p>需要注意的是，如果使用 <code>this.data.property = value</code>，同样可以设置 <code>this.data</code> 的值，但是它不会将数据发送到视图层，无法改变页面的状态。</p>
+
+<p><strong>一定要避免使用 </strong><code>this.data.property = value</code><strong> 的方式设置数据。</strong></p>
+
+<p><br /></p>
+
+<h2 id="toc_3">从服务器获取 banner 数据</h2>
+
+<p>言归正传，现在我们的目的是要得到一个 banners 数组，然后利用 <code>wx:for</code> 将 <code>banners</code> 数组中的每一项渲染到 swiper-item 中。</p>
+
+<p>我们可以在页面加载 (onLoad) 时，使用 <code>wx.request()</code> 发起一个 <code>ajax</code> 请求，来获取到所需要的 banner 列表数据。</p>
+
+<p>先来看一下 <code>wx.request(object)</code> 的使用方法。首先是 <code>object</code> 可以接受的参数值：</p>
+
+<ul>
+<li><p><code>url：</code>发送请求的地址。</p></li>
+<li><p><code>method：</code>请求方式，默认为 <code>GET</code>，有效值：<code>OPTIONS</code>, <code>GET</code>,<code>HEAD</code>,<code>POST</code>,<code>PUT</code>,<code>DELETE</code>,<code>TRACE</code>,<code>CONNECT</code>。<strong>所有值都要使用大写。</strong>经过测试，若使用小写，在安卓中会导致无法发起请求，而在开发者工具和 iOS 中则正常。</p></li>
+<li><p><code>data：</code>设置请求的参数。如果 method 值为 GET，这个函数会将 <code>data</code> 转换成 <code>query</code> 字符串，拼接在 <code>url</code> 后面，若 url 本身带有同名的 query 参数，那么 <code>data</code> 中的参数会覆盖 <code>url</code> 中的 <code>query</code> 参数；</p></li>
+</ul>
+
+<p>小程序执行 <code>wx.request(object)</code> 发送请求并收到 <code>success</code>（成功）的消息后，会自动执行请求成功返回的回调函数。回调函数执行时，会自动收到类似这样的回调参数：</p>
+
+<pre><code>res={data:&#39;服务器返回的数据&#39;，errMsg:&#39;错误信息&#39;，
+statusCode:HTTP状态码}
+</code></pre>
+
+<p>特别注意，在开发者工具和 iOS 中，<code>res.statusCode</code> 的类据类型是一个数值，<strong>而在安卓中的数据类型是一个字符串</strong>，所以在判断 <code>res.statusCode</code> 时不能直接使用 <code>===</code> 操作符，而应该用 <code>==</code> 操作符，或者是先对 <code>res.statusCode</code> 进行数据类型转换。</p>
+
+<p>现在，就可以在 <code>onLoad</code> 中调用 <code>wx.request()</code> 发起请求，访问获取 banner 列表的服务器 <code>API</code>。</p>
+
+<p>我们将各服务器 <code>API</code> 的访问地址都保存在 <code>API_URL</code> 对象，保存在 <code>utils/config.js</code> 中：</p>
+
+<pre><code>/***config.js***/
+const CONFIG={
+    API_URL:{
+    BANNER_QUERY:http://ifanr.com/api/banner
+    }
+}
+
+module.exports=CONFIG;
+</code></pre>
+
+<p>然后需要在 <code>index.js</code> 中使用 <code>require</code> 引入 <code>utils/config.js</code> 文件，引入路径为当前文件的相对路径：</p>
+
+<pre><code>/***index.js***/
+var CONFIG=require(../..utils/config.js);
+</code></pre>
+
+<p>于是，我们就知道了在小程序中 js 模块化的方法，模块通过 <code>module.exports</code> 对外暴露接口，在需要使用这些模块的文件中，使用 <code>require(path)</code> 将公共代码引入。</p>
+
+<p>发起 <code>wx.request</code> 请求：</p>
+
+<pre><code>/***index.js***/
+var CONFIG=require(&#39;../../utils/config.js&#39;);
+
+Page({
+    data:{
+    ...
+    },
+    onLoad:function(){
+    var _this=this;
+    
+    wx.request({
+        url:CONFIG.API_URL.BANNER_QUERY,
+        method:&#39;GET&#39;,
+        data:{
+            limit:6,
+            img_size:&#39;small&#39;
+        },
+        
+    success:function(res){
+        if(res.statusCode==200){
+            _this.setData({
+                banners:res.data.objects
+            });
+        }
+    }
+    });
+    }
+});
+</code></pre>
+
+<p>在 <code>wx.request()</code> 的回调函数中判断 <code>res.statusCode</code> 是否为 <code>200</code>，若为 <code>200</code> 则代表请求成功，接着将数据保存到 <code>banners</code> 数组中。</p>
+
+<p>我们在 <code>success</code> 回调函数中使用 <code>_this.setData({ banners: res.data.objects });</code> 设置 <code>banners</code> 的值。</p>
+
+<p>这里不能直接使用 <code>this.setData()</code> ，因为 <code>success</code> 回调函数是一个闭包，我们要先在闭包外面定义 <code>var _this = this;</code> ，再调用 <code>_this.setData()</code> ，以保证闭包内能到正确的 <code>this</code> 值。</p>
+
+<p>现在，在视图中我们就能看到完整的 banner 列表了。</p>
+
+<p><br /></p>
+
+<p>本文介绍了小程序中内置组件、数据绑定和发送请求 API 的用法，提醒了初学者一些不容易注意到的坑，通过上面的介绍和实际代码演示，希望能帮助初学者更容易理解和使用小程序的基他组件和 <code>API</code>。</p>
+
+<p><br /></p>
+
+<p>来自<a href="http://mp.weixin.qq.com/s?timestamp=1478846927&amp;src=3&amp;ver=1&amp;signature=2wSjiN7Qekwb2TPaoP1cwgE2iqUi*i46tZLbBVXwtZ2HG9xOgugmOifnjZ3BuBfQRHedortAQn1YBc1joStei3H0zPauU6NCUgijNs0hWDnP7pGI-CiPiva8qmc*KXCKe8WdpqKhqukFpaYu3N7T*jYkbDEgurnJTLsbW1ka3M0=">appso</a></p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14788557643900.html" 
+          title="Previous Post: 《黑x金》企鹅FM品牌24小时诞生记">&laquo; 《黑x金》企鹅FM品牌24小时诞生记</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14782499236169.html" 
+          title="Next Post: 五分钟快速设计出一个LOGO">五分钟快速设计出一个LOGO &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+<a class="facebook" href="https://www.facebook.com/profile.php?id=100013395165605" title="Facebook">Facebook</a>
+
+
+
+
+
+
+<a class="weibo" target="_blank" href="http://weibo.com/2182848997/profile?topnav=1&wvr=6" title="weibo">Weibo</a>
+<a class="twitter" target="_blank" href="https://twitter.com/Glen__Y" title="Twitter">Twitter</a>
+
+
+  <a class="facebook" target="_blank" href="atom.xml" title="Facebook">Facebook</a>
+  <a class="weibo" target="_blank" href="atom.xml" title="weibo">Weibo</a>
+  <a class="twitter" target="_blank" href="atom.xml" title="Twitter">Twitter</a>
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="14855087860472.html">Export Presets, Touch Bar, and More in Sketch 42</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14850425954917.html">Design like a Developer</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14838911325927.html">UI设计的切图命名规则(持续补充)</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14835157765602.html">ACCD本科产品系主任Karen Hofmann专访</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14832821542116.html">在Framer中响应多个设备</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>

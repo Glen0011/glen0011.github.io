@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  Archives - Glenpub
+  About Me - Glen'pub
   
   </title>
   
   
-  <link href="atom.xml" rel="alternate" title="Glenpub" type="application/atom+xml">
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
     <link rel="stylesheet" href="asset/css/foundation.min.css" />
     <link rel="stylesheet" href="asset/css/docs.css" />
     <script src="asset/js/vendor/modernizr.js"></script>
@@ -39,9 +39,13 @@
   <div class="row">
       <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
         <ul id="main-menu" class="left">
-        <li id="menu_item_index"><a href="index.html">HOME</a></li>
-        <li id="menu_item_archives"><a href="archives.html">Archives</a></li>
-        <li id="menu_item_about"><a href="about.html">ABOUT</a></li>
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
         </ul>
 
         <ul class="right" id="search-wrap">
@@ -60,16 +64,19 @@
 
         <nav class="tab-bar show-for-small">
   <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
-    <span> &nbsp; Glenpub</span>
+    <span> &nbsp; Glen'pub</span>
   </a>
 </nav>
 
 <aside class="left-off-canvas-menu">
       <ul class="off-canvas-list">
-       
-       <li><a href="index.html">HOME</a></li>
-    <li><a href="archives.html">Archives</a></li>
-    <li><a href="about.html">ABOUT</a></li>
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
 
     <li><label>Categories</label></li>
 
@@ -78,11 +85,29 @@
         
             <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
         
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
             <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
         
             <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
         
-            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
          
 
       </ul>
@@ -96,198 +121,29 @@
        
 
  <script type="text/javascript">
-  $(function(){
-    $('#menu_item_archives').addClass('is_active');
-  });
+	$(function(){
+		var currentURL = 'about.html';
+		currentURL = currentURL.substr(0,currentURL.length-5);
+		$('#menu_item_'+currentURL).addClass('is_active');
+	});
 </script>
 <div class="row">
-  <div class="large-8 medium-8 columns">
-    <div id="archives-page-wrap">
-        <h1>Archives</h1>
-        <div class="markdown-body archives-wrap">
-          
-             
-                <h1>2016</h1>
-            
-            <div class="article">
-              <a class="clearlink" href="14767800253703.html">
-                <h1>微信小程序，从设计师的角度说点观点</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2016/10/18</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html'>微信小程序</a></span>
-                 
-              </div>
-            </div><!-- article -->
 
-          
-            
-            <div class="article">
-              <a class="clearlink" href="14767798956788.html">
-                <h1>短视频市场的</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2016/10/18</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='%E5%B7%A5%E5%85%B7.html'>工具</a></span>
-                 
-              </div>
-            </div><!-- article -->
+    <div id="single-page-wrap">
+        <h1>About Me</h1>
 
-          
-            
-            <div class="article">
-              <a class="clearlink" href="14767582172711.html">
-                <h1>有些东西，在我们的回忆中挥散不去</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2016/10/18</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='%E6%9D%82%E8%B0%88.html'>杂谈</a></span>
-                 
-              </div>
-            </div><!-- article -->
+        <div class="markdown-body post-page">
+        <p>Hi,I’m Glen, an indie Designer. 微博: <a href="http://weibo.com/521274345">格兰</a>, Twitter: <a href="https://twitter.com/Glen__Y">Glen</a></p>
 
-          
-            
-            <div class="article">
-              <a class="clearlink" href="14767579887136.html">
-                <h1>欢迎使用 MWeb</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2016/10/18</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='%E4%BA%A7%E5%93%81.html'>产品</a></span>
-                 
-              </div>
-            </div><!-- article -->
+<p><br /></p>
 
-          
-            
-            <div class="article">
-              <a class="clearlink" href="14767577769043.html">
-                <h1>Markdown 语法和 MWeb 写作使用说明</h1>
-              </a>
-              <div class="read-more clearfix">
-                <span class="date">2016/10/18</span>
-                <span>posted in&nbsp;</span> 
-                
-                    <span class="posted-in"><a href='%E8%AE%BE%E8%AE%A1.html'>设计</a></span>
-                 
-              </div>
-            </div><!-- article -->
-
-           
         </div>
-      </div>
-  </div>
-
- <div class="large-4 medium-4 columns">
-  <div class="hide-for-small">
-    <div id="sidebar" class="sidebar">
-          <div id="site-info" class="site-info">
-            
-                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
-            
-                <h1>Glenpub</h1>
-                <div class="site-des">Hi, 我是一名设计师，这是我的博客，里面的观点有点个人</div>
-                <div class="social">
-
-
-
-
-
-
-
-
-
-
-
-  <a class="facebook" target="_blank" href="atom.xml" title="Facebook">Facebook</a>
-  <a class="weibo" target="_blank" href="atom.xml" title="weibo">Weibo</a>
-  <a class="twitter" target="_blank" href="atom.xml" title="Twitter">Twitter</a>
-                
-              	 </div>
-          	</div>
-              <div id="site-categories" class="side-item ">
-                <div class="side-header">
-                  <h2>Categories</h2>
-                </div>
-                <div class="side-content">
-
-      	<p class="cat-list">
-        
-            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
-        
-            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
-        
-            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
-        
-            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
-        
-            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
-         
-        </p>
-
-
-                </div>
-              </div>
-
-              <div id="site-categories" class="side-item">
-                <div class="side-header">
-                  <h2>Recent Posts</h2>
-                </div>
-                <div class="side-content">
-                <ul class="posts-list">
-	      
-		      
-			      <li class="post">
-			        <a href="14767800253703.html">微信小程序，从设计师的角度说点观点</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="14767798956788.html">短视频市场的</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="14767582172711.html">有些东西，在我们的回忆中挥散不去</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="14767579887136.html">欢迎使用 MWeb</a>
-			      </li>
-		     
-		  
-		      
-			      <li class="post">
-			        <a href="14767577769043.html">Markdown 语法和 MWeb 写作使用说明</a>
-			      </li>
-		     
-		   
-		  		</ul>
-                </div>
-              </div>
-        </div><!-- sidebar -->
-      </div><!-- hide for small -->
-</div><!-- large 4 -->
-
-</div><!-- row -->
-
+    </div>
+</div>              
  <div class="page-bottom clearfix">
   <div class="row">
    <p class="copyright">Copyright &copy; 2016
-Powered by Glenpub,&nbsp;</p>
+Powered by Glen&nbsp;</p>
   </div>
 </div>
 

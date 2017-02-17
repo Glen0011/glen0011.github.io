@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
     
-  设计 - Glen'pub
+  在Framer中响应多个设备 - Glen'pub
   
   </title>
   
@@ -121,135 +121,248 @@
        
 
  <script type="text/javascript">
-	$(function(){
-		$('#menu_item_index').addClass('is_active');
-	});
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
 </script>
 <div class="row">
-	<div class="large-8 medium-8 columns">
-		<div class="markdown-body home-categories">
-		
-			<div class="article">
-                <a class="clearlink" href="14796066360966.html">
-                
-                  <h1>Developing your eye for design</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>Looking back to when I first started designing, if there was a single thing I could go back and tell myself, that would be to <em>train my design eye,</em> my ability to critique and identify good design.</p>
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>在Framer中响应多个设备</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2017/1/1</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='Framer.html'>Framer</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <span id="more"></span><!-- more -->
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*gX5FFCxw4KGF3Lu8i8ULVA.jpeg" alt=""/></p>
+
+<p>使用 Framer 製作 Prototype 通常會有兩種做法：</p>
+
+<ol>
+<li>是 import from Sketch/Photoshop</li>
+<li>另一種則是直接在 Framer 從頭開始建構</li>
+</ol>
+
+<p>而這篇文章的技巧是適用於 2. ，當你想在 Framer 從零開始製作時，於一開始的設定方法。</p>
+
+<p><br/></p>
+
+<h3 id="toc_0">一般作法</h3>
+
+<p>通常在使用 Framer 製作時，最一開始會先選定一個裝置，它的長寬比會是你製作 UI 時的預設，比如像我們在製作 iOS Phone 的 UI 時，會以 750 x 1334 (px) 為 1x 的設定，那之後在 Framer 製作時，就會先選定 iPhone6s 作為預設裝置。（如下圖）</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*BFW77oJAZ1f9MgOudY0rxw.jpeg" alt=""/></p>
+
+<p><br/></p>
+
+<p>然後，你接下來所建構的每一個東西，都是基於此 750 x 1334 (px) 的設定，像是左圖的 “ui” Layer。（如下圖）</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*YBO0h6L-bnUALzInCA0Q3g.jpeg" alt=""/></p>
+
+<p><br/></p>
+
+<p>但是，這會有個問題，你會在哪些裝置上預覽跟操作？或者，你是否會分享 Framer Link 給其他人使用？而他們所使用的裝置，是否都剛好跟你預設解析度一樣？如果不是，那會發生什麼事？</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*TLRMo0Z1z89furLuWjUupw.jpeg" alt=""/></p>
+
+<p><br/></p>
+
+<p>如你所見，上圖三種裝置（iPhone6sPlus、Samsung Note5、HTC One A9）所顯示的內容都是沒有填滿螢幕的！</p>
+
+<p>所以，接下來的方法，就是能夠讓你所製作的內容，可以在多數手機裝置上正確顯示（填滿畫面）。</p>
+
+<p><br/></p>
+
+<h3 id="toc_1">Responsive 的方法</h3>
+
+<p>事實上方法不只一種，我自己有使用過兩種方式，此篇會先分享其中之一。</p>
+
+<p>這兩種方法都跟「比例」很有相關。</p>
+
+<p>首先一定要知道的基本數值就是你所定義的預設長寬，延續上面的舉例，就是 750 x 1334 。所以在 Framer 裡的定義大概可以像下面這樣：</p>
+
+<p><br/></p>
+
+<pre><code>default_w = 750
+default_h = 1334
+
+</code></pre>
+
+<p><br/></p>
+
+<p>第二個要知道的是，將會在哪些裝置上顯示，它們的解析度為何？舉例：</p>
+
+<ul>
+<li>iPhone6sPlus：1242 x 2208</li>
+<li>Samsung Note5：1440 x 2560</li>
+<li>HTC One A9：1920 x 1080</li>
+<li>… and more</li>
+</ul>
+
+<p>嗯⋯沒錯，解析度超多種，但不用擔心，這件事我們讓 Framer 告訴我們：</p>
+
+<p><br/></p>
+
+<pre><code>screen_width = Framer.Device.screen.width 
+screen_height = Framer.Device.screen.height 
+</code></pre>
+
+<p><br/></p>
+
+<p>接下來，就是最重要的「比例」了！就是用「顯示的螢幕解析度」除以「你所定義的預設解析度」，用寬或用高都可以，以寬來舉例：</p>
+
+<p><br/></p>
+
+<p><code>ratio = screen_width / default_w</code></p>
+
+<p><br/></p>
+
+<p>下一步就是要建立一個大容器，並且讓他能夠在不同裝置上填滿螢幕顯示，姑且叫它為「all」：</p>
+
+<p><br/></p>
+
+<pre><code>all = new Layer
+  width: default_w  # &lt;-- 等於你所定義的預設寬 750 
+  height: default_h # &lt;-- 等於你所定義的預設寬 1334
+  scale: ratio      # &lt;-- 比例用在這，乘以這個差異來填滿畫面
+  originY: 0        # &lt;-- scaleY 縮放的預設 pivot 是正中心，改為最上緣
+  y: 0              # &lt;-- 接著就把縮放的起始設為最上緣
+all.centerX()       # &lt;-- 水平置中
+</code></pre>
+
+<p><br/></p>
+
+<p>有了「all」這個大容器，接下來就把你所製作的內容（content）放在裡面吧！（ parent: all ）</p>
+
+<p><br/></p>
+
+<pre><code>content = new Layer
+  parent: all
+</code></pre>
+
+<p><br/></p>
+
+<p>到這邊，基本上就完成了，但是還有個小問題，就是在 Framer 裡讓 layer 縮放 scale 變大後，會讓 layer 變得糊糊的，所以必須要用上 force2d 這個 layer 屬性，設為 true 之後就不會變糊了。而為了接下來不必在每個 layer 的設定中都要特地加上去，所以可以先把它設定為預設，方法如下：</p>
+
+<p><br/></p>
+
+<p><code>Framer.Defaults.Layer.force2d = true</code></p>
+
+<p><br/></p>
+
+<p>記得這行要放到「all」layer 之前。</p>
+
+<p>不過 force2d = true 還是有可能會遇到無法顯示的情況，到時再特地為該 layer 加上 force2d = false 的設定。</p>
+
+<p>最終結果：</p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*mWFlMx5YVI6phydd9aNkvw.jpeg" alt=""/></p>
+
+<p><br/></p>
+
+<p>沒錯，不管它們本來的解析度為何，全部都變成用你所定義的預設解析度，乘以相對比例～縮放填滿了整個畫面！</p>
+
+<p>Framer Studio 的 code：</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*NQrVhe5hcq4mmlG753eHqA.jpeg" alt=""/></p>
+
+<p><br/></p>
+
+<h3 id="toc_2">Scale Responsive 的限制</h3>
+
+<p>如果你的預設解析度的長寬比為 1.778（1334/750），那麼能夠 100% 完全填滿顯示的裝置長寬比也同樣是 1.778</p>
+
+<p><br/></p>
+
+<p><code>1334 / 750 ≒ 1242 / 2208 ≒ 1440 / 2560 ≒ 1920 / 1080 ≒ 1.778</code></p>
+
+<p><br/></p>
+
+<p>所以如果選擇用 iPad 預覽，就會發現下緣被切掉（擋住）。（ 2048 / 1536 ≒ 1.333 ）</p>
+
+<p>但是「某些項目」也是有方法可以避免，以「Bottom Tab」為例，它的位置邏輯是：</p>
+
+<p>「 Tab最下緣」 等於 「螢幕顯示的最下緣」</p>
+
+<p>tab.maxY = screen_height ( 就是 Framer.Device.screen.height )</p>
+
+<p>這樣就可以正確顯示了。</p>
+
+<p><br/></p>
+
+<p>最後，放上</p>
+
+<p>Framer Project: <a href="http://share.framerjs.com/6kxw7hu612oi/">http://share.framerjs.com/6kxw7hu612oi/</a></p>
+
+<p>（ 之後有機會再分享另一種方式⋯⋯ ）</p>
+
+<p><br/></p>
+
+<p>来自Medium，作者waychang<br/>
+<a href="https://medium.com/framer-js-taiwan/framer-tips-responsive-for-most-devices-be92b98b9b1b#.p6ox1rf6e">https://medium.com/framer-js-taiwan/framer-tips-responsive-for-most-devices-be92b98b9b1b#.p6ox1rf6e</a></p>
+
+<p><br/><br/></p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14835157765602.html" 
+          title="Previous Post: ACCD本科产品系主任Karen Hofmann专访">&laquo; ACCD本科产品系主任Karen Hofmann专访</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14826542405722.html" 
+          title="Next Post: 在Adobe Illustrator中创建漫画人物和制作流程教学">在Adobe Illustrator中创建漫画人物和制作流程教学 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
 
 
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="14796066360966.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2016/11/20</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E8%AE%BE%E8%AE%A1.html'>设计</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
 
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="14782494686923.html">
-                
-                  <h1>Color Claim</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<p>Color Claim was created in 2012 by Tobias van Schneider with the goal to collect &amp; combine unique colors for my future projects.</p>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="14782494686923.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2016/11/4</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E8%AE%BE%E8%AE%A1.html'>设计</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-			<div class="article">
-                <a class="clearlink" href="14772993964104.html">
-                
-                  <h1>Design at 1x—It’s a Fact</h1>
-                  <div class="a-content">
-                      
-                      <div class="a-content-text">
-                        
-                        	<blockquote>
-<p><em>The tangible benefits of designing at 1x pixel density</em></p>
-</blockquote>
-
-
-                        
-                      </div>
-                  </div>
-                </a>
-                <div class="read-more clearfix">
-                  <div class="more-left left">
-                   <a href="14772993964104.html">Read more</a>&nbsp;&nbsp; 
-                    <span class="date">2016/10/24</span>
-                    <span>posted in&nbsp;</span> 
-          				  
-          					    <span class="posted-in"><a href='%E8%AE%BE%E8%AE%A1.html'>设计</a></span>
-          				   
-                  </div>
-                  <div class="more-right right">
-                  <span class="comments">
-                      
-
-                       
-                  </span>
-                  </div>
-                </div>
-              </div><!-- article -->
-        
-              
-
-
-			<div class="row">
-			  <div class="large-6 columns">
-			  <p class="text-left" style="padding-top:25px;">
-			   
-			  </p>
-			  </div>
-			  <div class="large-6 columns">
-			<p class="text-right" style="padding-top:25px;">
-			
-			</p>
-			  </div>
-			</div>
-		</div>
-	</div><!-- large 8 -->
 
  <div class="large-4 medium-4 columns">
   <div class="hide-for-small">

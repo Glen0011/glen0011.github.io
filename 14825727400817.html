@@ -1,0 +1,716 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  如何在Framer中制作多页面原型 - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>如何在Framer中制作多页面原型</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2016/12/24</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='Framer.html'>Framer</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>A step by step guide for fellow designers, Framer JS beginners. Topics covered: Page Component | Scroll Component | Some basic programming</p>
+
+<span id="more"></span><!-- more -->
+
+<p><br/></p>
+
+<p>Let’s create a click through prototype which will have multiple screens. We will start off by creating a structure for our pages. This structure is called as a Page component in Framer JS. Let’s see how it works.</p>
+
+<p>让我们创建一个点击通过原型，将有多个屏幕。 我们将开始为我们的页面创建一个结构。 此结构在Framer JS中称为页面组件。 让我们看看它是如何工作的。</p>
+
+<p><br/></p>
+
+<h2 id="toc_0">1. Setup the page component</h2>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*ZJlvY9IY5RwwQFVZKiP_nA.jpeg" alt=""/></p>
+
+<blockquote>
+<p>Our page is setup and is taking the full width and height of the screen.</p>
+</blockquote>
+
+<p><br/></p>
+
+<pre><code>page = new PageComponent
+  width: Screen.width
+  height: Screen.height
+  scrollHorizontal: false 
+  scrollVertical: false
+</code></pre>
+
+<p><br/></p>
+
+<p>The above code will create a page component for you which will hold all of your different pages. We are going to keep scrollHorizontal &amp; scrollVertical to false, because page component by default has a swipe to scroll behaviour, which we don’t want. We want to switch page only when we tap on a button.</p>
+
+<p>上面的代码将为您创建一个页面组件，它将包含所有不同的页面。 我们将scrollHorizontal和scrollVertical保持为false，因为页面组件默认情况下有一个滑动到滚动行为，我们不想要。 我们只想在点击按钮时切换页面。</p>
+
+<p><br/></p>
+
+<p>Also, we want the page component to take up the screen’s width and height. Whatever phone you pick for your prototype we want to take it’s screen width and screen height.</p>
+
+<p>此外，我们希望页面组件占据屏幕的宽度和高度。 无论你选择什么手机你的原型，我们想要它的屏幕宽度和屏幕高度。</p>
+
+<p><br/></p>
+
+<p>Now this component is the DADDY of your prototype, it’s the base which will hold everything together.</p>
+
+<p>现在这个组件是你的原型的DADDY，它是将所有东西放在一起的基础。</p>
+
+<p><br/></p>
+
+<h2 id="toc_1">2. Let’s make our first page</h2>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*5dOdp4InjRaJERkc2skzig.png" alt=""/></p>
+
+<p><br/></p>
+
+<pre><code>#page 1
+mainScreen = new Layer
+  width: page.width
+  height: page.height
+  parent: page.content
+  backgroundColor: &quot;white&quot;
+</code></pre>
+
+<p><br/></p>
+
+<p>This is the setup for your first page. Your first page will take up the height and width of the page component you defined above, and will have a white background.</p>
+
+<p>这是您的第一页的设置。 您的第一页将占据您在上面定义的页面组件的高度和宽度，并且将具有白色背景。</p>
+
+<p><br/></p>
+
+<p>Now we can add elements to our page and attach events.</p>
+
+<p>现在我们可以添加元素到我们的页面并附加事件。</p>
+
+<p><br/></p>
+
+<p>Notice: the parent layer for this page(mainScreen) will be the content layer of the page component( the component we defined in the beginning.)</p>
+
+<p>注意：此页面（mainScreen）的父层将是页面组件（我们在开头定义的组件）的内容层。</p>
+
+<p><br/></p>
+
+<p>Think of defining layers as boxes inside boxes, Page component is the biggest box, inside which are all the smaller boxes.</p>
+
+<p>考虑将图层定义为框内的框，页面组件是最大的框，其中都是小框。</p>
+
+<p><br/></p>
+
+<p><code>parent: page.content</code></p>
+
+<p><br/></p>
+
+<h3 id="toc_2">2.1 Create a scroll component in this screen and add some content</h3>
+
+<p><br/></p>
+
+<pre><code>mainScreenScroll = new ScrollComponent
+  width: Screen.width
+  height: Screen.height
+  parent: mainScreen
+  scrollHorizontal: false
+</code></pre>
+
+<p><br/></p>
+
+<p>What we did here is created a scroll component which will hold the screen which we want to scroll. We defined it’s parent — mainScreen and we don’t want a horizontal scroll so made it false.</p>
+
+<p>我们在这里做的是创建一个滚动组件，它将保存我们要滚动的屏幕。 我们定义它的父 - mainScreen，我们不想要一个水平滚动，所以它是false的。</p>
+
+<p><br/></p>
+
+<p>Now we need some content to scroll.</p>
+
+<p>I have created a long list of pictures in sketch, which we will make scrollable in our prototype. I have attached a link to the files and images at the end of the post.</p>
+
+<p>我已经在草图中创建了一长串图片，我们将在我们的原型中进行滚动。 我已在文章末尾附加了文件和图像的链接。</p>
+
+<p><br/></p>
+
+<p>Let’s export that image to framer. Just drag and drop the image in Framer. When you drag and drop an image, by default it is the last layer to be created in code.</p>
+
+<p>让我们将该图像导出到framer。 只需在Framer中拖放图像即可。 当您拖放图像时，默认情况下，它是在代码中创建的最后一个图层。</p>
+
+<p><br/></p>
+
+<pre><code>picture_group = new Layer
+  width: 670
+  height: 7240
+  image: &quot;images/picture_group.png&quot;
+  parent: mainScreenScroll.content
+  x: Align.center
+</code></pre>
+
+<p><br/></p>
+
+<p><em>Notice: We have created a scroll component and whatever layer you want to make as scrollable should go inside it.</em></p>
+
+<p>注意：我们创建了一个滚动组件和任何你想要做的层，因为可滚动应该在其中。</p>
+
+<p><br/></p>
+
+<p>i.e it’s parent should be mainScreenScroll.content — the scroll component we created earlier.</p>
+
+<p><br/></p>
+
+<p>Now when you do this, your scrollable image may fall out of place, it won’t be centered or may not have enough margin at the top/bottom.</p>
+
+<p>现在，当你这样做，你的可滚动图像可能会落在地方，它不会居中或可能没有足够的边距在顶部/底部。</p>
+
+<p><br/></p>
+
+<p>To align layer use the <a href="https://framerjs.com/docs/#align.align">Align property</a>.</p>
+
+<p><br/></p>
+
+<p>To have necessary margin in a scrollable image use contentInset on the scroll component.</p>
+
+<p>为了在可滚动图像中具有必要的余量，在滚动组件上使用contentInset。</p>
+
+<p><br/></p>
+
+<pre><code>mainScreenScroll.contentInset = 
+  top: 170
+  bottom: 200
+</code></pre>
+
+<p><br/></p>
+
+<p>I gave 100px on top and 200px on bottom and used Align.center on x property to make it centered. Take a look at the screen below.</p>
+
+<p>我给了100px顶部和200px底部和使用Align.center on x属性，使它居中。 看看下面的屏幕。</p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*ibrXEqQEYJDSfSclYuS64g.png" alt=""/></p>
+
+<blockquote>
+<p>Notice the layer hierarchy. Page is holding the content, which has mainScreen, which has a scrollable area whose content has the picture group.</p>
+</blockquote>
+
+<p><br/></p>
+
+<h3 id="toc_3">2.2 Let’s add a blue button and make it clickable and navigate to a new page.</h3>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*YAH3IwDq8rA3jt-8OFttwQ.png" alt=""/></p>
+
+<p><br/></p>
+
+<pre><code>continueCta = new Layer
+  width: 700
+  height: 150
+  image: &quot;images/continueCta.png&quot;
+  x: Align.center
+  y: Align.bottom(-20)
+  parent: mainScreen
+</code></pre>
+
+<p><br/></p>
+
+<p>We simply made a button in sketch and drag-dropped it in Framer. Nothing fancy. But the important thing to notice is where will the blue button should be added in framer layer tree(the left column in the pic below). You need to be careful about element’s parent layer.</p>
+
+<p>我们只是在草图中创建了一个按钮，并将其拖放到Framer中。 没有什么花哨。 但重要的是要注意的是蓝色按钮应该在framer树中添加到哪里（在下面的图片的左栏）。 你需要注意元素的父层。</p>
+
+<p><br/></p>
+
+<p><em>Note: we wanted the button to come on top of all the layers in mainScreen, hence we created it last.</em></p>
+
+<p>注意：我们希望按钮在mainScreen中的所有图层之上，因此我们最后创建它。</p>
+
+<p><br/></p>
+
+<p>before we attach a click event and navigate to the next page, let’s add iOS status bar and title bar at the top to make our proto look like a proper iOS app.</p>
+
+<p>在我们附加一个点击事件并导航到下一页之前，让我们在顶部添加iOS状态栏和标题栏，使我们的原型看起来像一个正确的iOS应用程序。</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*t0eIexa1lGHpzthHky821g.png" alt=""/></p>
+
+<pre><code>statusBar = new Layer
+  width: 750
+  height: 40
+  image: &quot;images/status_bar.png&quot;
+  parent: page
+</code></pre>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*qZtaOQ65Z-xb4f5A4wtQsA.png" alt=""/></p>
+
+<p><br/></p>
+
+<p>I had the status and title bar ready in my sketch file, so just exported them to @2x and drag-dropped them in Framer.</p>
+
+<p>我在sketch已经准备好状态和标题栏文件，所以只是导出@ 2x并拖进Framer。</p>
+
+<p><br/></p>
+
+<p><em>Note: Status bar will come on top of every other layer so we will create this layer inside the page component’s content layer, above the rest of the layers. The title bar will be inside the mainScreen page we made . Take a look at the attached screen.</em></p>
+
+<p>注意：状态栏将出现在每个其他图层的顶部，因此我们将在页面组件的内容图层内创建此图层，在其余图层上方。 标题栏将在我们所做的mainScreen页面内。 看看附加的屏幕。</p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*VB4a5_LF1V9diZa3fq_BjA.png" alt=""/></p>
+
+<blockquote>
+<p>Yay!! we have a title and status bar at top, sweet!</p>
+</blockquote>
+
+<p>Now let’s add another page.</p>
+
+<p><br/></p>
+
+<h2 id="toc_4">3. Add a new page and navigate to it.</h2>
+
+<p>Now we will add a page to our page component. The new page won’t be visible, because when you add it, it gets added to the right of the screen.</p>
+
+<p>现在我们将向我们的页面组件添加一个页面。 新页面将不可见，因为添加它时，它会添加到屏幕右侧。</p>
+
+<p><br/></p>
+
+<pre><code>#page 2
+secondPage = new Layer
+  width: page.width
+  height: page.height
+  backgroundColor: &quot;white&quot;
+
+#add a title bar for this page too
+titleBarTwo = new Layer
+  width: 750
+  height: 128
+  image: &quot;images/titleBarTwo.png&quot;
+  parent: secondPage #the parent is now secondPage
+
+#this is where we add new pages
+page.addPage(secondPage)
+</code></pre>
+
+<p><br/></p>
+
+<p>We created a page added a title bar to it and added that page to the page component.</p>
+
+<p>我们创建了一个页面，并向其添加了一个标题栏，并将该页面添加到页面组件。</p>
+
+<p>Now we will link the page to the blue button via a click event.</p>
+
+<p>现在，我们将通过点击事件将页面链接到蓝色按钮。</p>
+
+<p><br/></p>
+
+<pre><code>#let&#39;s add click event to the button which navigates to second page.
+continueCta.on Events.Click, -&gt;
+  page.snapToPage(secondPage)
+</code></pre>
+
+<p><br/></p>
+
+<p>When continueCta is clicked we are calling a function snapToPage which helps us snap to the second page. We simply passed our secondPage layer to snapToPage function and now our prototype is switching to next page.</p>
+
+<p>当单击continueCta时，我们调用一个函数snapToPage，它帮助我们捕捉到第二页。 我们简单地通过我们的secondPage层到snapToPage函数，现在我们的原型是切换到下一页。</p>
+
+<p><br/></p>
+
+<p>On the second page I created a click event on back too so that we can come back to the home screen.</p>
+
+<p>在第二页上，我也创建了一个点击事件，以便我们可以回到主屏幕。</p>
+
+<p><br/></p>
+
+<ol>
+<li>first make a transparent layer in framer, a little larger than back so that it has a good enough hit area.</li>
+</ol>
+
+<p>首先在framer中做出一个透明层，比后面大一点，这样它有一个足够好的命中区。</p>
+
+<ol>
+<li>add a click event to it.</li>
+</ol>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*ixCgIsOp9hFX5thjSyX9Jw.png" alt=""/></p>
+
+<p><br/></p>
+
+<pre><code>back = new Layer
+  height: 100
+  y: 30
+  parent: secondPage
+  backgroundColor: &quot;transparent&quot; #make it transparent when you have placed it perfectly on top of your button.
+
+back.on Events.Click, -&gt;
+  page.snapToPreviousPage()
+</code></pre>
+
+<p><br/></p>
+
+<p>You now know how to create a page and add it to your page component.</p>
+
+<p>您现在知道如何创建页面并将其添加到页面组件。</p>
+
+<ol>
+<li>Create a new layer for your page.</li>
+<li>Decorate it with the elements you want.</li>
+<li>Add it as a page to the page component you have created.</li>
+</ol>
+
+<p><br/></p>
+
+<p>Let me know if you have any queries. I will help you out. I am attaching a link to the files for the prototype. You can download the files here — <a href="https://github.com/akujgd/multiscreen-framer-proto">https://github.com/akujgd/multiscreen-framer-proto</a></p>
+
+<p>Cheers!</p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14826542405722.html" 
+          title="Previous Post: 在Adobe Illustrator中创建漫画人物和制作流程教学">&laquo; 在Adobe Illustrator中创建漫画人物和制作流程教学</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14820292300905.html" 
+          title="Next Post: Designers shouldn’t code. They should study business.">Designers shouldn’t code. They should study business. &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+<a class="facebook" href="https://www.facebook.com/profile.php?id=100013395165605" title="Facebook">Facebook</a>
+
+
+
+
+
+
+<a class="weibo" target="_blank" href="http://weibo.com/2182848997/profile?topnav=1&wvr=6" title="weibo">Weibo</a>
+<a class="twitter" target="_blank" href="https://twitter.com/Glen__Y" title="Twitter">Twitter</a>
+
+
+  <a class="facebook" target="_blank" href="atom.xml" title="Facebook">Facebook</a>
+  <a class="weibo" target="_blank" href="atom.xml" title="weibo">Weibo</a>
+  <a class="twitter" target="_blank" href="atom.xml" title="Twitter">Twitter</a>
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="14855087860472.html">Export Presets, Touch Bar, and More in Sketch 42</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14850425954917.html">Design like a Developer</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14838911325927.html">UI设计的切图命名规则(持续补充)</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14835157765602.html">ACCD本科产品系主任Karen Hofmann专访</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14832821542116.html">在Framer中响应多个设备</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>

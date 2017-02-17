@@ -1,0 +1,607 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  Design like a Developer - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>Design like a Developer</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2017/1/22</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='%E4%BA%A4%E4%BA%92.html'>交互</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>Longer title: Design in Sketch as if you were building UI in a development environment</p>
+
+<span id="more"></span><!-- more -->
+
+<p>UI design has come a long way, and so have image manipulation programs (if you can even call them that nowadays). We remember creating our first UIs in GIMP, that program made by the Ubuntu guys, and now that we’ve got MacBooks we’re using Sketch for almost everything UI related.</p>
+
+<p>UI设计已经走了很长的路，因此有图像处理程序（如果你现在甚至可以打电话给他们）。 我们记得在GIMP中创建了我们的第一个UI，这个程序是由ubuntu的人制作的，现在我们已经有MacBooks，我们使用Sketch几乎所有的UI相关。</p>
+
+<p><br/></p>
+
+<p>Here’s the thing, though; Sketch has been created with designers in mind. It’s been built with the purpose of helping designers create user interfaces — and you can create pretty amzing things with it. But don’t forget that when you’re building a product, your duty ends when your design is shipped, not when you “finalize” that Sketch file.</p>
+
+<p>Your design has to go through a developer and be built in a development environment. This is where the problem lies; if you look at Sketch and a UI builder in a development environment (or <em>IDEs</em>, e.g. Xcode and Android Studio) side by side, you will not see many similarities.</p>
+
+<p><br/></p>
+
+<p>The way a developer builds your design is fundamentally different from the way you, as a designer, create it in Sketch. It sounds kind of stupid when you put it into perspective, doesn’t it?</p>
+
+<p>开发人员构建您的设计的方式根本不同于您作为设计师在Sketch中创建的方式。 这听起来有点愚蠢，当你把它放在透视，不是吗？</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*SILxrapOSVGmc4sLIaM3CA.png" alt=""/></p>
+
+<blockquote>
+<p>Xcode, Sketch, and Android Studio (and some lightning bolts)</p>
+</blockquote>
+
+<p><br/></p>
+
+<p>That’s okay, though! This article is going to describe a design approach which comes a little bit closer to what a developer goes through when they build your design (it’s a struggle…).</p>
+
+<p>没关系，虽然！ 本文将描述一种设计方法，它更接近开发人员在构建您的设计时所经历的（这是一场斗争...）。</p>
+
+<p><br/></p>
+
+<h3 id="toc_0"><strong>Think in “Views”</strong></h3>
+
+<p>You know <em>Symbols</em> in Sketch, right? We were really excited to use this feature when we switched to Sketch because it comes so close to how developers build UIs. Most of the time when you see things such as list items or action bars, they have one single source <strong>view</strong> that gets reused again and again.</p>
+
+<p>你知道<em>符号</em>在素描，对不对？ 当我们切换到Sketch时，我们非常兴奋地使用这个功能，因为它非常接近开发人员如何构建UI。 大多数时候，当你看到列表项或动作栏，它们有一个单一的源<strong>视图</strong>，一次又一次的重用。</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*nhQf6v6HBbnhR7lWbq7Ehw.png" alt=""/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*z12CHMxb0YJxT7vppoCciQ.png" alt=""/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*cJqbNsqX7jQ0vCynbSpYMA.png" alt=""/></p>
+
+<p><br/></p>
+
+<p>The most important guideline of designing like a developer is to think of your design in terms of <em>Views</em>. Think of a View as an independent group of elements which has defined borders and is sorted in hierarchical order.</p>
+
+<p>像开发人员一样设计的最重要的指导方针是根据* Views *来思考你的设计。 将View视为一组独立的元素，这些元素定义了边界并按层次顺序排序。</p>
+
+<p><br/></p>
+
+<p>As an example, the Search Results screen of our Nimber app on Android is divided into two main views; the Top View which contains the Action Bar as well as a Card with the user-entered locations and filters, and a List View with the returned search results.</p>
+
+<p>例如，我们在Android上的Nimber应用程序的搜索结果屏幕分为两个主视图： 包含操作栏的顶视图以及具有用户输入的位置和过滤器的卡以及具有返回的搜索结果的列表视图。</p>
+
+<p><br/></p>
+
+<p>In the Blueprint or Skeleton above, you can see how the view bounds are clearly defined in the design. <strong>These are layers that are invisible in the Sketch file (0% opacity)</strong>, but they’re extremely useful when handing over the design to your developers.</p>
+
+<p>See below how the Action Bar is broken down into smaller Views.</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*gcQLtwSi9its2BBZ5zpGtg.png" alt=""/></p>
+
+<blockquote>
+<p>Top Level of View Hierarchy</p>
+</blockquote>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*eAXV4sx5uwqlPbllrhWmFw.png" alt=""/></p>
+
+<blockquote>
+<p>ActionBar View</p>
+</blockquote>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*g4gsq4tDW707agveiSOzNg.png" alt=""/></p>
+
+<blockquote>
+<p>Action Items with View Bounds at 100% opacity</p>
+</blockquote>
+
+<p><br/></p>
+
+<p>Make sure to not just group your layers randomly. Define their sizes and spacing in a clear way (avoid odd numbers) and sort everything in hierarchical order.</p>
+
+<p>确保不要随机分组图层。 以清晰的方式定义它们的大小和间距（避免奇数），并按层次顺序排序。</p>
+
+<p><br/></p>
+
+<p>The same applies for layer styles, for cases where you need to use consistent strokes, rounded corners, drop shadows, you name it.</p>
+
+<p>这同样适用于图层样式，对于需要使用一致笔划，圆角，阴影的情况，您可以命名。</p>
+
+<p><br/></p>
+
+<p>This app called <a href="https://zeplin.io/">Zeplin</a> helps a lot here. Long story short: you import your design in there, and the app extracts all view sizes, text sizes, colors, etc. in a developer oriented way. It’s a great tool that bridges the gap between designers and developers, and I can’t wait to see what it holds for the future.</p>
+
+<p><br/></p>
+
+<p>When you hand over your design, the developer can look at Zeplin and extract the sizes, margins, paddings from one single item, and create the view in their IDE accordingly.</p>
+
+<p>当你交出你的设计，开发人员可以看看Zeplin，从一个单一的项目中提取大小，边距，paddings，并相应地在其IDE中创建视图。</p>
+
+<p><br/></p>
+
+<h3 id="toc_1">Design in 1x</h3>
+
+<p>Why is this even up here…</p>
+
+<p>By designing in <strong>1x</strong>, first you help yourself by not having to calculate sizes in other screen densities, but most importantly, both you and the developer end up using the same numbers. This way you prevent any miscalculations when handing over your design, and keep a consistent set of values.</p>
+
+<p>通过1x设计，首先你不必计算其他屏幕密度的大小，但最重要的是，你和开发人员最终使用相同的数字。 这样，您可以防止在处理设计时出现错误，并保持一组一致的值。</p>
+
+<p><br/></p>
+
+<p>This applies to view sizes, text sizes, line heights, most numbers really…</p>
+
+<p>这适用于视图大小，文字大小，行高，大多数数字...</p>
+
+<p><br/></p>
+
+<h3 id="toc_2">Consistent Color Palette</h3>
+
+<p>Create once, always reuse. Try to have as few colors as possible.</p>
+
+<p>创建一次，总是重用。 尝试尽可能少的颜色。</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*MwWQuonkMOBlroqzqD9l2Q.png" alt=""/></p>
+
+<p><br/></p>
+
+<p>You’ll see developers mostly use names such as <em>Primary, Secondary, Accent, Enabled, Disabled</em> etc. You can do the same thing. <em>Primary</em> and <em>Secondary</em> can be your text colors, <em>Accent</em> can be your brand’s color, you get the point.</p>
+
+<p>你会看到开发人员主要使用诸如* Primary，Secondary，Accent，Enabled，Disabled *等名称。你可以做同样的事情。 <em>主要</em>和<em>次要</em>可以是您的文字颜色，<em>重音</em>可以是您的品牌的颜色，你明白了吧。</p>
+
+<p><br/></p>
+
+<p>In Sketch, you can save these colors in the Color Picker, but as far as I know, there’s no way to share them outside of the Sketch file. What you can do instead is create an artboard with the colors from your palette, along with their names and hex codes. This way, developers can quickly extract them when they access your design through Zeplin, and insert them in the app’s code.</p>
+
+<p>在Sketch中，您可以在颜色选择器中保存这些颜色，但据我所知，没有办法在Sketch文件之外共享它们。 你可以做的，而不是创建一个画板与调色板的颜色，以及他们的名字和十六进制代码。 这样，开发人员可以在他们通过Zeplin访问您的设计时快速提取它们，并将它们插入到应用程序的代码中。</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*UnGAceC6fZfRUcc63u4-2A.png" alt=""/></p>
+
+<blockquote>
+<p>These are the colors we use on the Nimber apps</p>
+</blockquote>
+
+<p><br/></p>
+
+<h3 id="toc_3"><strong>Design for all cases</strong></h3>
+
+<p><br/></p>
+
+<p>Keep in mind that developers don’t build the ideal UI, but rather something that adapts into the ideal UI. They have to take care of cases where there’s no connectivity, or there’s a server error, or when there’s no content to display and much more.</p>
+
+<p>请记住，开发人员不构建理想的UI，而是适应理想UI的东西。 他们必须处理没有连接的情况，或者有服务器错误，或没有要显示的内容等等。</p>
+
+<p><br/></p>
+
+<p>So make sure to design for every scenario. Specifically, make sure to design every screen in its Empty state, Loading state, Error state, and the Ideal state. 99% of the time, these will be enough. <a href="http://scotthurff.com/posts/why-your-user-interface-is-awkward-youre-ignoring-the-ui-stack">This article</a> by <a href="https://medium.com/u/3869cb8878f7">Scott Hurff</a> goes into more depth about states, recommended read.</p>
+
+<p>所以，确保为每个场景设计。 具体来说，确保将每个屏幕设计为空状态，加载状态，错误状态和理想状态。 99％的时间，这些就够了。 本文由Scott Hurff深入了解，推荐阅读。</p>
+
+<p><br/></p>
+
+<h3 id="toc_4"><strong>Screen sizes</strong></h3>
+
+<p>We live in an era of multiple screen sizes, so we have to design accordingly. This is a big deal when designing for Android because of its plethora of devices which come in multiple screen sizes.</p>
+
+<p><br/></p>
+
+<p>The “lazy” way to deal with this is to use a plugin such as <a href="https://github.com/bouchenoiremarc/Sketch-Constraints">Sketch Constraints</a> when creating your design in Sketch. When you use something like that, you can duplicate your artboards, resize them, and refresh the artboard. Magically, the UI will adapt accordingly to fit that screen size.</p>
+
+<p>处理这种情况的“惰性”方法是在Sketch中创建设计时使用一个插件，如Sketch Constraints。 当你使用类似的东西，你可以复制你的画板，调整它们的大小，并刷新画板。 Duang，UI将相应地适应屏幕大小。</p>
+
+<p><br/></p>
+
+<p>The “correct” way to do this is to design your UI for phone screens (under 7 inches), 7 inch tablets, and 10 inch tablets. It’s especially awesome when you use Master-Detail Flows, which is a fancy term for combining List and Detail panels into one layout, such as the one below.</p>
+
+<p>“正确的”方法是为手机屏幕（7英寸以下），7英寸平板电脑和10英寸平板电脑设计您的UI。 当你使用主 - 细节流，这是一个很奇怪的术语，将列表和细节面板合并为一个布局，如下面的一个布局，它是特别棒。</p>
+
+<p><br/></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*x5oYpU9S0lUJ9vQbwcNNEw.png" alt=""/></p>
+
+<blockquote>
+<p>Oh, you wanna know what this is? <a href="https://medium.com/@BashaChris/overhauling-the-twitter-experience-on-android-80f5b09e7c67#.1c8wpz368">Well you’re in luck!</a></p>
+</blockquote>
+
+<p><br/></p>
+
+<h3 id="toc_5"><strong>Things to keep in mind</strong></h3>
+
+<ol>
+<li><p>Not all of your users will use the app in English. Keep in mind that text might get longer (or shorter) in other languages, and you have to take this into account when designing your layouts.</p>
+
+<p>并非所有用户都将以英语使用该应用。 请记住，文字可能会在其他语言中使用较长（或较短），而您在设计版面配置时必须考虑这个因素。</p></li>
+<li><p>You can’t cherry pick — you don’t have control over every pixel. Some parts of the app will inevitably end up looking less than ideal because of unpredictable data.</p>
+
+<p>你不能做出最优选择 - 你不能控制每个像素。 应用程序的某些部分将不可避免地最终看起来不太理想，因为不可预测的数据。</p></li>
+<li><p>Try to use interactions, gestures, transitions, and animations built into the platform. Your developers will thank you.</p>
+
+<p>尝试使用平台中内置的交互，手势，过渡和动画。 开发人员会感谢你。</p></li>
+</ol>
+
+<p><br/></p>
+
+<h4 id="toc_6"><strong>Last but not least</strong></h4>
+
+<p>Communicate with your developers! Let them educate you. While tools such as Zeplin and Flinto are a great way to share your design with developers, they don’t have the ability to explain the behavior of every part of the app. Share knowledge and strive to achieve the result that is best for the product!</p>
+
+<p>That’s it for this article! Hopefully, you learned something and give these methods a go.</p>
+
+<p><strong>Happy shipping! ✌️</strong></p>
+
+<p><img src="http://of832oeqz.bkt.clouddn.com/1*0zBg56i9RC8DSpsK6pvEJA.png" alt=""/></p>
+
+<p><em>This article was created by Nimber’s design team,</em> <a href="https://twitter.com/BashaChris"><em>Chris</em></a> <em>and</em> <a href="https://twitter.com/ckor"><em>Andrew</em></a><em>. Make sure to follow us on Twitter!</em></p>
+
+<p><em>And don’t forget to check out</em> <a href="http://nimber.com/"><em>Nimber</em></a> <em>itself!</em> <a href="http://facebook.com/easybring"><em>Facebook</em></a> <em>-</em> <a href="http://twitter.com/nimber"><em>Twitter</em></a></p>
+
+<p><em>Click 💚 to spread the word!</em></p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14855087860472.html" 
+          title="Previous Post: Export Presets, Touch Bar, and More in Sketch 42">&laquo; Export Presets, Touch Bar, and More in Sketch 42</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14838911325927.html" 
+          title="Next Post: UI设计的切图命名规则(持续补充)">UI设计的切图命名规则(持续补充) &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+<a class="facebook" href="https://www.facebook.com/profile.php?id=100013395165605" title="Facebook">Facebook</a>
+
+
+
+
+
+
+<a class="weibo" target="_blank" href="http://weibo.com/2182848997/profile?topnav=1&wvr=6" title="weibo">Weibo</a>
+<a class="twitter" target="_blank" href="https://twitter.com/Glen__Y" title="Twitter">Twitter</a>
+
+
+  <a class="facebook" target="_blank" href="atom.xml" title="Facebook">Facebook</a>
+  <a class="weibo" target="_blank" href="atom.xml" title="weibo">Weibo</a>
+  <a class="twitter" target="_blank" href="atom.xml" title="Twitter">Twitter</a>
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="14855087860472.html">Export Presets, Touch Bar, and More in Sketch 42</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14850425954917.html">Design like a Developer</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14838911325927.html">UI设计的切图命名规则(持续补充)</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14835157765602.html">ACCD本科产品系主任Karen Hofmann专访</a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="14832821542116.html">在Framer中响应多个设备</a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>
