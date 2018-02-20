@@ -1,0 +1,575 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  Keynote + Sketch 制作APP交互演示 - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>Keynote + Sketch 制作APP交互演示</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2017/11/2</span>
+
+          
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>实际生产环境中需要快速输出交互演示，我们选择了 Keynote 与 Sketch 相结合的方式，本文主要介绍大致的方法及一些心得。</p>
+
+<span id="more"></span><!-- more -->
+
+<p><img src="media/15095525653114/b27f1c0c3067368c208ade1b1ea969eb." alt="Image title"/></p>
+
+<p>MacOS 平台下的 Sketch 以其轻量高效迅速成为界面设计的一把利器，但每当进入到交互环节，却始终受限于其无法“动起来”的短板，需要通过 AE 或 Principle 之类的其他应用来完成，这两者本身存在一定的学习和使用成本，往往令人望而却步。</p>
+
+<p>而Keynote 作为 Mac OS 系统中的一款幻灯片制作软件，也被不少人称之为演示界的神器。因其强大而酷炫的动画效果，在当下的“发布会时代”，我们经常能看到他的它的美妙之处，比如老罗的单口相声等。</p>
+
+<p>当这两者组合使用时，主要有以下三个优点：</p>
+
+<p>1、学习成本低</p>
+
+<p>Mac OS平台的一贯使用体验，极易上手，没有时间轴，没有图层。常用动画均已内置，只需修改部分参数即可。</p>
+
+<p>2、时间成本低</p>
+
+<p>相比传统方法，至少节省了超过一半的时间。Sketch 与 Keynote 之间可以实现无缝切换，Sketch 设计完页面不用导出，可直接 copy 至 Keynote。</p>
+
+<p>3、演示效果好</p>
+
+<p>Sketch 与 Keynote 两个软件都是矢量的，不同尺寸环境之下演示同样清晰。</p>
+
+<p>当然，不可否认 AE 等专业动画工具的强大，Keynote 只能作为“小快灵”的一种选择，毕竟本质上它只是一个幻灯片演示工具。</p>
+
+<p><strong>Keynote 简单介绍  </strong></p>
+
+<p>相比 PowerPoint 的操作界面 Keynote 显得极其简洁，这也符合 MacOS 系统的使用体验。中间是舞台区域；其丰富的参数调节基本全部被放置在了右侧面板中；顶部放置了部分常用工具，与 Sketch 同样可通过右击自定义功能；左侧则作为导航器总览全局；四个部分即可完成大部分的操作，此处不再赘述。<img src="media/15095525653114/e0dee204630e4f67c3816202445cf0a3." alt="Image title"/></p>
+
+<p>需要注意的是右侧面板，在选中【左侧幻灯片】与【右侧舞台元素】时对应的参数是不同的，并且通过“格式、动画效果、文稿”三个Tab对其进行了分类。</p>
+
+<p><img src="media/15095525653114/16a0ffccbd4d1f359adaa31c14f86fb9." alt="Image title"/></p>
+
+<p><img src="media/15095525653114/fc08a24593f586e954d47184734f42e2." alt="Image title"/></p>
+
+<p><strong>开始前的五步准备</strong></p>
+
+<p> (分的较细，熟练工可忽略)</p>
+
+<p><strong>1、清楚演示的流程  </strong></p>
+
+<p>Keynote 本质上是幻灯片的播放，并非生成了真正可交互的页面。可以在画面上模拟点击的效果，但却不能进行任意的操作，因此开始之前需要设计好演示的流程，单线播放。形式不限，用交互稿连线、纸上画画草图、甚至心中有数均可。</p>
+
+<p><img src="media/15095525653114/fb191fd2c3de32d11456519f2c55cba1." alt="Image title"/></p>
+
+<p><strong>2、设置舞台的尺寸  </strong></p>
+
+<p>Sketch 中我们使用 @1x 的尺寸来设计页面，为了方便复制与对齐元素，加上均是矢量的软件，可将 Keynote 的舞台尺寸设置为 @1x 的大小。若使用 Photoshop 设计一般按照  @ 2x 的尺寸来做，总之与设计稿对应即可。</p>
+
+<p><img src="media/15095525653114/260a92a9798c81f85fec40ddcdc259d7." alt="Image title"/></p>
+
+<p><strong>3、明确层次关系  </strong></p>
+
+<p>明确前景层、内容层、背景层的关系及需要做动效的部分。对于初次接触的同学经常会忽略这一块，但这个结构反映在每一个页面，需要清晰的记住。</p>
+
+<p><img src="media/15095525653114/150fc2db7e36fc0999195be7b122fa20." alt="Image title"/></p>
+
+<p><strong>4、编辑母版  </strong></p>
+
+<p>通过母版设置页面背景色。Keynote 本身为每一个幻灯片都准备了许多母版，基本上用不到。一个APP中常用的背景色不会太多，可以将其设置到母版中，方便调取。</p>
+
+<p><img src="media/15095525653114/2efe09fba19f77019bac46ee897f5f59." alt="Image title"/></p>
+
+<p><strong>5、整理公共元素  </strong></p>
+
+<p>在 Sketch 中整理出动效需要用到的切片，不用导出，放在一起即可。一是可以明确动效的内容，二是以防止在来回的切换中破坏设计稿。当然，能做到心中有数或者时间紧迫的情况下，不整理也行。</p>
+
+<p><img src="media/15095525653114/45a6d2f223cdfdbdf49a14db6fd53f6b." alt="Image title"/></p>
+
+<p>剩下的就是尽情的做动效就好，将元素从 Sketch 复制到 Keynote 中，然后添加动画效果调节参数即可，调节参数需要反复尝试达到完美的效果。</p>
+
+<p><img src="media/15095525653114/1f4f28652b5a8fdcf96e8e1bec9f10d2." alt="Image title"/></p>
+
+<p><strong>经验小结   </strong></p>
+
+<p><strong>1、关于构件顺序</strong></p>
+
+<p>Keynote 中没有图层，构件顺序一定程度起到了分层管理的作用，构件即为画面中的元素。页面中的所有元素很少同时产生动作，因此就有了先后的顺序。通过这些顺序来组合出变化多端的动画效果。</p>
+
+<p>a、一行即为一个构件，左侧是构件的名称，右侧是该构件对应的动效。</p>
+
+<p>b、当两个构件按顺序依次产生动效时，两行会连在一起，中间有分隔线。</p>
+
+<p>c、当两个构件同时产生动效时，两行也会连在一起，但中间没有分隔线。</p>
+
+<p>d、若中间断开不相连，则两个构件的动效互不影响，且下一个构件需要在上一个构件动效结束之后通过点按产生动效。</p>
+
+<p>以上4种情况的切换可通过【拖拽】或【起始】下拉菜单中的选项来完成。</p>
+
+<p><img src="media/15095525653114/c7833523736953580947e8097adcb6ec." alt="Image title"/></p>
+
+<p>通过时间轴可以更好的理解：有分隔线则3个构件依次产生动效，没有分隔线则同时产生动效。</p>
+
+<p><img src="media/15095525653114/dae26512b24e54946595e7bc09fc6b92." alt="Image title"/></p>
+
+<p><img src="media/15095525653114/ae19a80017c596b47996f00d927adf25." alt="Image title"/></p>
+
+<p>在构件顺序中还可以通过【延迟】增加效果，即给定一个动效产生的时间。可以做出让构件2在构件1尚未结束时即开始动作的效果。 </p>
+
+<p><img src="media/15095525653114/13ec5e9f944c0d6fd72bd1942e61ddc8." alt="Image title"/></p>
+
+<p><strong>2、不要把全部效果做在同一页  </strong></p>
+
+<p>这是实际操作中很容易发生的问题，我们习惯性的把一个幻灯片理解为一个页面，于是该页面的所有效果就做到了同一页上，实际大可不必如此。因为没有图层，同一页效果太多会导致后期修改非常麻烦。不用吝惜幻灯片的数量，一个APP的页面对应10个幻灯片的页面也是可以的，只要演示时不让观众反感就行。</p>
+
+<p><img src="media/15095525653114/98cdb0b4bedb27759730a794aab10bcd." alt="Image title"/></p>
+
+<p>大胆的使用左侧的页面，按下【Tab】键可对其进行简单的分组，方便管理。</p>
+
+<p><img src="media/15095525653114/b02b76eaf38c1dcd590c5b763fa418df." alt="Image title"/></p>
+
+<p>以一个长达3屏的APP页面为例，如何将其分到数个幻灯片页面中：</p>
+
+<p>1、在1、2、3个幻灯片中分别放对应的3屏高度的页面</p>
+
+<p>2、在1、2之间插入一个过渡页，放入一个第1屏与第2屏相连的页面</p>
+
+<p>3、页面滑动的动效就做在这个过渡页上</p>
+
+<p>这是利用了页面“自动过渡”的效果，选中页面时，右侧可以选择页面过渡是【自动】或【在点按时】，自动即为播放完该页后自动切换到下一个页面，在点按时顾名思义。（PS：实际演示过多次，从未被察觉。）</p>
+
+<p><img src="media/15095525653114/412d308b3cc6cdb50696467a19780e36." alt="Image title"/></p>
+
+<p>这里的切换只要明白一个道理就行: 当点按时，<strong>只是在切换下一个动作，而不是下一个页面。</strong></p>
+
+<p>对页面【开始过渡】与第一个元素的【起始】有几种搭配的情况，简单统计如下</p>
+
+<p><img src="media/15095525653114/e0622a29d7497f25829fc5d42f9d61ef." alt="Image title"/></p>
+
+<p><strong>3、参数更准确  </strong></p>
+
+<p>Sketch 到 Keynote的复制也存在问题，比如透明度无法完美复制，此部分需要在 Keynote 中通过参数来调节。（如下图，同一色值的透明度渐变，从Sketch复制到Keynote后变为纯色）</p>
+
+<p><img src="media/15095525653114/b5b4be53c4be5fe88e48b18eff1c9bfc." alt="Image title"/></p>
+
+<p>在复制含投影的图层时，需要计算元素的宽度，默认会将投影算进尺寸中。</p>
+
+<p><img src="media/15095525653114/45ea3c44fb4be08c0ead99b29ea0d51d." alt="Image title"/></p>
+
+<p>如果当仔细检查卡顿之后，仍然感觉演示不流畅，问题可能是出现在动画时长的设置上。视觉感知的时长与影响中的时长通常存在差异，这里不免需要严谨到毫秒来设置。<img src="media/15095525653114/cb75f5c3177207ebe3d2cc79f79069c7." alt="Image title"/></p>
+
+<p><strong>4、眼见不一定为实</strong>  </p>
+
+<p>在实际演示中难免会遇到一些 Keynote 自带效果无法实现的动效，此时可以通过一些简单的动作组合出想要的演示效果。</p>
+
+<p><img src="media/15095525653114/340ca113c408c505179eebfc3c03c864." alt="Image title"/></p>
+
+<p>实现动效的方式不止一种，如下图中的“长按悬浮”就是两种不一样的制作方式。不时会出现固有方法解决不了的动效，可以换个思路。</p>
+
+<p><img src="media/15095525653114/05d2e8f224e46c1735d1951baaac1f0a." alt="Image title"/></p>
+
+<p><img src="media/15095525653114/c0b47292e78587c36ec8539094773d85." alt="Image title"/></p>
+
+<p><strong>5、文件体积</strong></p>
+
+<p>如果是简单几个页面的演示可以忽略，但若是一个完整的项目演示，这个问题就比较明显，虽然影响不大。即便都是矢量的软件，但是 Copy 多了以后还是会影响体积，动辄几个G的 Keynote 文件也是常有的事。</p>
+
+<p>以  @ 1x 尺寸下的标题栏为例，通过【文字】+【形状】工具在 Keynote 中制作出左侧的效果，其文件体积与直接从 Sketch 中复制而来呈现出巨大的差异。</p>
+
+<p><img src="media/15095525653114/214bf068a738ed9ed4b7da664fcae8de." alt="Image title"/></p>
+
+<p>加上几个模块后，体积差异越发明显。（右下方的折线图中竖轴代表两者文件体积的比值，横轴表示内容数量）</p>
+
+<p><img src="media/15095525653114/49ca2515a0088ef94ef7773fbe1c67c1." alt="Image title"/></p>
+
+<p>当然，在 Keynote 中完全手动复原效果图很不显示，也与“快速制作交互演示”的宗旨相悖，此处仅供参考。</p>
+
+<p><strong>常用动画</strong></p>
+
+<p>Dribbble等设计网站中很容易发现许多的动图，给我们练习动效提供了借鉴。拿到动效后，不用着急动手，可以先分析其中包含了哪些动作，拆解之后会发现并不难，即便是复杂的动效也逃不出基础动作的组合。</p>
+
+<p>对比了大量APP页面中的常见动效之后，基本可以归纳出以下四个动作：</p>
+
+<p><img src="media/15095525653114/6f283e2f81e65783ed233338335eb3ea." alt="Image title"/></p>
+
+<p>以上四个动作通过各种组合，可以搭配出很多美妙的效果。</p>
+
+<p><strong>Keynote自带效果</strong></p>
+
+<p>Keynote 中为我们提供了许多动画效果，满足常见的APP页面交互搓搓有余。即使是初学者也不用被诸多的效果干扰，大可放心的尝试，下图中已经淡去了基本用不到的部分。</p>
+
+<p>需要注意的是，选中【页面】与【元素】所对应的效果是不同的。下图是选中【页面】时的效果。</p>
+
+<p><img src="media/15095525653114/e49be6625d0d8b6f5fc06df6ea8f5b4f." alt="Image title"/></p>
+
+<p>此处单独介绍下【神奇移动】，这是在选中【页面】时才能添加的效果。其原理是在 两个页面 切换时，为两个页面中的 相同元素 添加补间动画。通过元素位置、形状、透明度……等差异，达到移动、变形、渐变……等效果。其中也与其他动效一样加入了【抹入抹出】的加速效果，增加运动曲线的弯曲度，使动效更加自然。</p>
+
+<p><img src="media/15095525653114/ad593be83bc01c89007f04b67e0f26de." alt="Image title"/></p>
+
+<p>如下，右图中的圆角矩形是用左图中的圆改变倒角而来，因此使用神器移动时会出现“圆变形为圆角矩形”的过程；右图中的三角形与左图中的圆无关系，页面切换时不会产生补间动画。</p>
+
+<p><img src="media/15095525653114/5434c397ac6fe20d3fd8a2e65d764cc9." alt="Image title"/></p>
+
+<p>选中【元素】时分为三类，分别对应元素的“出现、动作、消失”三个阶段，各有差异。</p>
+
+<p>【构件出现】即为画面中元素从无到有的动效，多用在页面切换、弹框或其他用户操作之后。</p>
+
+<p><img src="media/15095525653114/25ca1227356e75d402fd1e1284c240f9." alt="Image title"/></p>
+
+<p>【动作】是面对已经显示的元素进行的动效，如移动、缩放等常见效果。有时也可以用过透明度，组合出构件出现的效果。</p>
+
+<p><img src="media/15095525653114/4ba49c5975d467ef445c3825a7fb9fd6." alt="Image title"/></p>
+
+<p>【构件消失】顾名思义与出现相反，其中的效果也大多与构件出现对应。</p>
+
+<p><img src="media/15095525653114/49cd0690b57152e2d679788653976881." alt="Image title"/></p>
+
+<p>综上，是我在使用 Keynote+Sketch 制作交互演示的一些小结，供大家参考。</p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="15108441200586.html" 
+          title="Previous Post: ">&laquo; </a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="15031554252885.html" 
+          title="Next Post: "> &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+<a class="facebook" href="https://www.facebook.com/profile.php?id=100013395165605" title="Facebook">Facebook</a>
+
+
+
+<a class="pinterest" href="https://www.pinterest.com/bjsywj/" title="Pinterest">Pinterest</a>
+
+
+<a class="weibo" target="_blank" href="http://weibo.com/2182848997/profile?topnav=1&wvr=6" title="weibo">Weibo</a>
+<a class="twitter" target="_blank" href="https://twitter.com/Glen__Y" title="Twitter">Twitter</a>
+
+
+
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15142442783493.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15136029944353.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15131264893113.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15126209730514.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15113682000264.html"></a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>

@@ -1,0 +1,545 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  C4D插件总结 - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>C4D插件总结</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2017/3/9</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='C4D.html'>C4D</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p><strong>原文：14 essential Cinema 4D plugins</strong></p>
+
+<p><strong>译文：TVart小斌老师</strong></p>
+
+<span id="more"></span><!-- more -->
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPEPK8GPImll2e6s3t9hCHeGQ4NCPhziavRZrfQVbIbVxqtDVCnniaDhdA/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p><strong>前方高能，这篇文章是我们TVart的小斌老师花一晚上的时间翻译出来的。</strong></p>
+
+<p><strong>玩C4D必会的14个插件！</strong></p>
+
+<p><strong>文章末端提供下述插件的下载链接</strong></p>
+
+<p><strong>（光收集插件就花了小编一下午的时间）</strong></p>
+
+<p>Maxon的Cinema 4D有一个充满活力并能良好支持的插件生态系统，此为应用程序提供各种扩展 -有补充内置功能缺陷，还有的是用于精简工作流。 由于Cinema 4D软件在开发的时候架构就很牛逼，不仅这些插件很好地配适到软件应用程序（通常是无缝的），他们都在一起玩得很好。</p>
+
+<p>所以你可以找到很多Cinema 4D教程，混合第三方修改器和效果器与本机工具，使用turblence FD  X粒子，然后用毛发着色器可视化，打碎网格与Nitroblast，然后使用Signal ... 这些功能之间的组合让你创造出无穷的创意效果。</p>
+
+<p>在这个功能中，我们收集了一些我们最喜欢的插件（尽管并不是所有的插件）。 这里有每个人的东西。</p>
+
+<p>用这些c4d的插件去做一些开脑洞的效果吧！</p>
+
+<p>01. X-Particles 3.5</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPno4AiaVh68RwG7AeBfmdE35H8Zoqtgw5rtv8o63VlCjURtQD6T1rA4Q/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>最新一版的xp粒子系统已经能够受到mograph中的效果器的影响了。</p>
+
+<p>最新版的xp粒子系统现在可以受到mograph效果器的影响了，现在你可以用你熟悉的效果器对粒子进行着色，随机，以及缩放了。（目前最高版本是2.1，3.5需要花钱购买正版）</p>
+
+<p><strong>插件效果案例</strong></p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2wlTw6vEAnyuU0zm6xp7qGOqxzB9HQ8ADECxvrQGRSiaE6jeibrcqiaicOeAjB5iaUiafbQO5qWOk3RGK9w/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>02. TurbulenceFD</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPqgU3KP0ACiaqBmyGibQXvK8ibYibxLVB2smkcIvViaibPHQPgb7TmBOEDswg/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>这个重量级的特效案例渲染的分辨率是2500*1600.默认设置花了46s; 通过调整设置，我们得到它只有13s。</p>
+
+<p>Tfd这个插件是基于立体像素的概念所开发的动力学解算系统，它主要用于做烟和火特效。TFD现在大量的用在电影，电视栏目，以及游戏的宣传片当中。你只要用了这个插件并且看到了他的效果就会对他的着迷。（谁用谁知道，极其方便以及好用）</p>
+
+<p>*<strong><em>插件效果案例 </em></strong>*</p>
+
+<p><strong>作者：Lena Steinkühler</strong></p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2wlTw6vEAnyuU0zm6xp7qGOG36quavAfTHXDofTXBKvRVKdwhlzPMrCSia7QrZia4Fz7p1mjAoLBcbQ/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>03. Nitroblast</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPTiaqPNlS4AI8LpAIcPwJOsP5BLpWLFMSuXlr62ibwiaeQAJFmRVcT5BEw/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>Nitroblast可以用在角色动画中</p>
+
+<p>Lazaros又被大家叫做“NitroMan”创造了许多有用的插件，但他说Nitroblast可能是他最好的。</p>
+
+<p>这个牛逼的小插件可以自动的让物体破碎。并且用动力学可以轻易的让他们炸成碎片。虽然C4D R18内置新增了泰森分裂，但是很多功能还是需要借助这款插件完成</p>
+
+<p>*<strong><em>插件效果案例 </em></strong>*</p>
+
+<p><strong>作者：</strong>büro bewegt</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2wlTw6vEAnyuU0zm6xp7qGOJPTZh0anCHhFW55RXwibVJtnOCKYiaMsP097lAA2ou2u01Cgc4r2wTMw/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>04. Scroll Roll Deformer</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPWLqZ1Cw3ETGv8ia3hgOTqgPia8FtyTqtkcJbXn2QzyicW8iaccOV9CMia2g/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>滚动变形器这个插件可不只是能做出让红地毯铺开的效果</p>
+
+<p>Curious Animal的开发者Daniel Fitzgerald说，Scroll Roll旨在帮助创建卷纸和类似卷地毯的效果，同时他还发现了这个小插件也可以创建萌芽动画的有趣方法。 这个插件可以做出完美的增长发芽对象和羽毛生长动画。</p>
+
+<p>这些展开动画并不只是按比例的缩放一下就完事了，这个插件能够让物体有一个更加细腻的动画变形。</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2wlTw6vEAnyuU0zm6xp7qGOXiciaSE2B1k1UXfl7034FwLLibt1BaydBT6qyofVtIqcnDAxJ80nf9omw/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>05. Lumen 2</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPqicEnGUbISShicM27GXZwIhTPfLG3oNicHz8AeSFjSxc1fI7Plw8Ua9Vw/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>衰减着色器描述了不同斜率的区域</p>
+
+<p>Lumen 2由Chris Montasano创建，虽然他不再积极开发它，它仍然工作正常在C4D R17很好的运行。 Chris说，他最喜欢的Lumen中的功能就是能够快速的让一块区域上长出随机的物体，并且这个过程是可以可视化调整的。</p>
+
+<p>06. Motion Stretch Deformer</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPtxCFScAibSothsKoZW0ibbmUVyH8GxZFRNDNKu6GQV0iazzibpFSFOIYOw/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>模型加不加载这个插件都能做出这个动画。</p>
+
+<p>又一次提到了Daniel Fitzgerald，又名Daniel Fitzgerald，是运动拉伸变形器。 </p>
+
+<p>当这个插件运用到模型上，就如你猜的一样，他可以根据模型的运动或者运动轨迹让模型产生相应的形变。</p>
+
+<p>07. Signal</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPIrichIIyznxeJzZ5xMTOQzlP2w5wC2WoTzibHhVH2D3QUMrQUIG6qJaQ/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>Signal这个插件能够不用再时间线上k帧，就可以产生连续的循环的动画。</p>
+
+<p>Signal这个插件是灰星星的插件，他做这个插件的目的是做一些循环动画用的。这个插件就像一个标签和一个变形器一样，你只需要往里头拽入一些能够k帧的属性，（包括选一些颜色）剩下的就只是调调参数然后看效果了。Signal能够生成随机的，基于噪波的动画，也能生成无缝循环动画。</p>
+
+<p>08. Effex 2.7</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPea9AEce5zUbfnwslGVn2fTTOGPLpGMNSKsd2E8dPbks68CsXYr3AHg/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>这些画面展示了变形器是如何影响物体形变的。</p>
+
+<p>Navie Effex是一款C4D的流体特效插件，一个用于物理计算的框架工具，能够产生火，烟，各种粘度的流体，同时还利用子弹刚体动力学来梳理这些效果。 所以现在，例如，你可以有物体落下，打在一起，创建飞溅，浮动或下沉，取决于它们的质量和密度。</p>
+
+<p>09. SplinePatch 3.0</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPHRicSHaM11nJMzW6gplicEq2HeXO58LoTXQ8VZjPR9liaj6UU4jbEGibFg/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>此图像是透明材质上的SplinePatch的实体拉伸示例</p>
+
+<p>顾名思义，SplinePatch 3.0为C4D带来样条修补，使您能够从相交样条创建平滑曲面。如汽车，服装，字符，包装或其他复杂的形状，保持可编辑和动画的理想选择。</p>
+
+<p>（此插件使用C4DR16版本基本价值就不大了，C4DR17就不需要这个插件了，软件内部升级自带了。）</p>
+
+<p>10. EdgeShade</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPib4C9ZQPamKhlrCvb2rCzQaibcZrr93dC2Ih09O5cicQ8Qw7ylpeXpzFA/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>这个插件能够用在分离的而且不同材质的物体上，有效解决布尔之后交融边界硬边渲染问题。</p>
+
+<p>Chris Montasano说EdgeShade插件的软化边缘材质其实用了很多障眼法，人们看了效果会感到惊奇。这个插件最大的特点就是用了光线跟踪的算法，让你用材质的方法渲染出软边的效果，即使你想让两个相互交叉的模型产生软边接缝也是可以的。光线跟踪算法能让你调整软边的大小。</p>
+
+<p>11. Forester</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPeaeiaNszs3z9WQBCj1aqRRrtXbsczfd8B4vp41IDeC6HicKRCfW7eWEw/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>一套有不同材质贴图的森林石头的模型。</p>
+
+<p>这个插件是3d world杂志第202期介绍过的插件，而且被五星好评了。</p>
+
+<p>Forester是一个植被生长插件，它不仅能够自动的长出不同的草，树等植物，并且还有石头生长器，被叫做多功能机。</p>
+
+<p>12. Transform</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPSaj72bXE8rDKicJibS4ib3FWjITVfIUiawyDRtmicIfEArKbtM0Ul937cnA/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>Transform和nitroblast生出的碎块能够很好的配合出好效果。</p>
+
+<p>GSG的Transform插件可以让你不用k帧就能产生动画。这个插件提供了65个动画序列预设。并且这些预设也能够调整成你想要的。插件能很好的作用在文字，克隆阵列上或者是nb插件生成的碎片。</p>
+
+<p>13. Unfolder</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPpb5Ud3ib8sE3au1VpveksB86fHRWmQsmr92hkqnMCCLn9OYSNDZsn6g/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>用一些聪明的解决方法，你能够把unfold生成的动画缓存起来并且和其他的效果进行叠加使用。</p>
+
+<p>César Vonc开发的这套工具将对象拆解为连接的多边形条，像香蕉剥皮的效果。这是一个非常酷的效果，有很多选项，以改变它的展开和消失的方式。不过César说您不能轻易地缓存效果，因为默认情况下，Unfolder会更改点和面计数，PLA缓存需要它们相同。</p>
+
+<p>*<strong><em>插件效果案例 </em></strong>*</p>
+
+<p><strong>作</strong>者：郭术生 </p>
+
+<p><strong>教程链接：</strong></p>
+
+<p><a href="http://www.zcool.com.cn/work/ZMTkxMDE3NDg=.html">http://www.zcool.com.cn/work/ZMTkxMDE3NDg=.html</a></p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_png/obeAdQjKv2wlTw6vEAnyuU0zm6xp7qGOElQu6NR57vfkkyT9LPzISlybibAuySZ37AhBIrRTD4wGJqHLNuyS1QA/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_png/obeAdQjKv2wlTw6vEAnyuU0zm6xp7qGOra1TeE8akIuiaooU7j3cGxibVE2vian7HjqQtVA1AJWQETHkXl60RvuIg/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>14. Difference Map</p>
+
+<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/obeAdQjKv2xKNcicSxGE3SjZ049eicfEVPfVeZXEH9fic4VohaJx32d5d3YgVuSNjfFYgebz2nibR0Z4Pgr2mlphdw/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt=""/></p>
+
+<p>做这个效果，我们用了“好奇动物”工作室的impact deformer插件识别出了不同的颜色，并生成了通道。并用这个通道配合dm插件做出了这个效果。</p>
+
+<p>Dm插件是一个很方便的插件。用了这个插件你能让变形器产生一个顶点贴图。所以，假如你用了impact deformer这个变形器生成了一个涟漪的效果，那么你就能用dm这个标签生成一个这个涟漪的顶点贴图。用了这个顶点贴图你就能让涟漪水波纹和其他的结构上上不同的材质。</p>
+
+<p>本文最初发表于“3D世界杂志”期刊210。</p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14893817205196.html" 
+          title="Previous Post: 创建用户画像需要多少时间？">&laquo; 创建用户画像需要多少时间？</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14884435977727.html" 
+          title="Next Post: 制作一个有趣的水下世界">制作一个有趣的水下世界 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+<a class="facebook" href="https://www.facebook.com/profile.php?id=100013395165605" title="Facebook">Facebook</a>
+
+
+
+<a class="pinterest" href="https://www.pinterest.com/bjsywj/" title="Pinterest">Pinterest</a>
+
+
+<a class="weibo" target="_blank" href="http://weibo.com/2182848997/profile?topnav=1&wvr=6" title="weibo">Weibo</a>
+<a class="twitter" target="_blank" href="https://twitter.com/Glen__Y" title="Twitter">Twitter</a>
+
+
+
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15142442783493.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15136029944353.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15131264893113.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15126209730514.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15113682000264.html"></a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>

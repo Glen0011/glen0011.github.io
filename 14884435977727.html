@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  制作一个有趣的水下世界 - Glen'pub
+  
+  </title>
+  
+  
+  <link href="atom.xml" rel="alternate" title="Glen'pub" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+  <script src="asset/highlightjs/highlight.pack.js"></script>
+  <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script>hljs.initHighlightingOnLoad();</script>
+<script type="text/javascript">
+  function before_search(){
+    var searchVal = 'site:glen.pub ' + document.getElementById('search_input').value;
+    document.getElementById('search_q').value = searchVal;
+    return true;
+  }
+</script>
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+
+  <section class="top-bar-section">
+  <div class="row">
+      <div style="position: relative;width:100%;"><div style="position: absolute; width:100%;">
+        <ul id="main-menu" class="left">
+        
+        <li id=""><a target="_self" href="index.html">首页</a></li>
+        
+        <li id=""><a target="_self" href="archives.html">存档</a></li>
+        
+        <li id=""><a target="_self" href="about.html">我的</a></li>
+        
+        </ul>
+
+        <ul class="right" id="search-wrap">
+          <li>
+<form target="_blank" onsubmit="return before_search();" action="http://google.com/search" method="get">
+    <input type="hidden" id="search_q" name="q" value="" />
+    <input tabindex="1" type="search" id="search_input"  placeholder="Search"/>
+</form>
+</li>
+          </ul>
+      </div></div>
+  </div>
+  </section>
+
+</nav>
+
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; Glen'pub</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+        
+        <li><a target="_self" href="index.html">首页</a></li>
+        
+        <li><a target="_self" href="archives.html">存档</a></li>
+        
+        <li><a target="_self" href="about.html">我的</a></li>
+        
+
+    <li><label>Categories</label></li>
+
+        
+            <li><a href="%E8%AE%BE%E8%AE%A1.html">设计</a></li>
+        
+            <li><a href="%E4%BA%A7%E5%93%81.html">产品</a></li>
+        
+            <li><a href="Logo.html">Logo</a></li>
+        
+            <li><a href="%E5%B7%A5%E5%85%B7.html">工具</a></li>
+        
+            <li><a href="%E6%9D%82%E8%B0%88.html">杂谈</a></li>
+        
+            <li><a href="Framer.html">Framer</a></li>
+        
+            <li><a href="%E4%BA%A4%E4%BA%92.html">交互</a></li>
+        
+            <li><a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html">微信小程序</a></li>
+        
+            <li><a href="%E5%93%81%E7%89%8C.html">品牌</a></li>
+        
+            <li><a href="Hbuilder.html">Hbuilder</a></li>
+        
+            <li><a href="%E4%BB%A3%E7%A0%81.html">代码</a></li>
+        
+            <li><a href="C4D.html">C4D</a></li>
+        
+            <li><a href="Sketch.html">Sketch</a></li>
+        
+            <li><a href="%E7%94%BB%E7%94%BB.html">画画</a></li>
+         
+
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+
+        <section id="main-content" role="main" class="scroll-container">
+        
+       
+
+ <script type="text/javascript">
+  $(function(){
+    $('#menu_item_index').addClass('is_active');
+  });
+</script>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+      <div class="markdown-body article-wrap">
+       <div class="article">
+          
+          <h1>制作一个有趣的水下世界</h1>
+     
+        <div class="read-more clearfix">
+          <span class="date">2017/3/2</span>
+
+          <span>posted in&nbsp;</span> 
+          
+              <span class="posted-in"><a href='%E8%AE%BE%E8%AE%A1.html'>设计</a></span>
+           
+         
+          <span class="comments">
+            
+
+            
+          </span>
+
+        </div>
+      </div><!-- article -->
+
+      <div class="article-content">
+      <p>In this tutorial I&#39;ll show you how to create a funny underwater scene featuring a big fish stuck on a tree. </p>
+
+<span id="more"></span><!-- more -->
+
+<p>First we&#39;ll create the base scene using the sky, the sea, and a color fill layer. Then we&#39;ll add the boat, tree, and fish, and we&#39;ll blend them together using adjustment layers, masking, and brushes. After that, we&#39;ll import the leaves and the bird, and we&#39;ll paint the bubbles. We&#39;ll paint the light and add several adjustment layers to complete the final effect.</p>
+
+<h2 id="toc_0">Tutorial Assets</h2>
+
+<p>The following assets were used during the production of this tutorial:</p>
+
+<ul>
+<li><a href="https://photodune.net/item/sunset-sky/8067037">Sky</a> </li>
+<li><a href="https://photodune.net/item/ocean/3357047">Sea</a> </li>
+<li><a href="https://pixabay.com/en/femo-denmark-landscape-scenic-sky-106124/">Grass</a> </li>
+<li><a href="https://pixabay.com/en/chile-glacier-dead-tree-clouds-139631/">Tree</a> </li>
+<li><a href="http://www.textures.com/download/fish0027/19498">Fish</a> </li>
+<li><a href="https://pixabay.com/en/seagull-fly-sky-water-bird-spring-814113/">Bird</a> </li>
+<li><a href="https://pixabay.com/en/fall-leaves-leaf-isolated-orange-331485/">Leaves</a> </li>
+<li><a href="http://jennyle88.deviantart.com/art/Bubble-brushes-442727833">Bubble brushes</a> </li>
+<li><a href="https://morguefile.com/p/124656">Boat</a></li>
+</ul>
+
+<h2 id="toc_1">1. How to Add the Sky</h2>
+
+<h3 id="toc_2">Step 1</h3>
+
+<p>Create a new <strong>2000 x 1684 px</strong> document in Photoshop with the given settings:</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish1-1.jpg" alt="new file"/></p>
+
+<h3 id="toc_3">Step 2</h3>
+
+<p>Press <strong>Control-Shift-N</strong> to make a new layer. Hit <strong>G</strong> to activate the <strong>Gradient Tool</strong> and choose the <strong>Radial Gradient</strong> with the colors <code>#60bbec</code> and <code>#155069</code>. Drag a line from left to right to get a similar result to the one below.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish1-2.jpg" alt="gradient fill"/></p>
+
+<h3 id="toc_4">Step 3</h3>
+
+<p>Open the sky image. Drag this image to the blue canvas using the <strong>Move Tool (V)</strong> and place it in the upper half.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish1-3.jpg" alt="add sky"/></p>
+
+<p>Click the second icon at the bottom of the <strong>Layers</strong> panel to add a mask to this layer. Use a soft round brush with black color (soft black brush) with the <strong>Opacity</strong> about <strong>30-35%</strong> to reduce the clouds&#39; intensity on the top right of the sky. We&#39;re aiming to add the main light from the left and will darken the right area, so the clouds there should not be too obvious.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish1-3a.jpg" alt="sky masking"/></p>
+
+<h3 id="toc_5">Step 4</h3>
+
+<p>Go to <strong>Layer &gt; New Adjustment Layer &gt; Color Balance</strong> and set it as <strong>Clipping Mask</strong>. Change the <strong>Midtones</strong> settings.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish1-4.jpg" alt="sky color balance"/></p>
+
+<h3 id="toc_6">Step 5</h3>
+
+<p>Use a <strong>Vibrance</strong> adjustment layer to enhance the sky&#39;s color. Bring the <strong>Vibrance</strong> value up to maximum.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish1-5.jpg" alt="sky vibrance"/></p>
+
+<h3 id="toc_7">Step 6</h3>
+
+<p>Create a <strong>Curves</strong> adjustment layer to darken the right corner of the sky. On this layer mask, use a soft black brush to erase the left so its lightness will not be changed.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish1-6.jpg" alt="sky curves"/></p>
+
+<h2 id="toc_8">2. How to Create the Underwater Sea</h2>
+
+<h3 id="toc_9">Step 1</h3>
+
+<p>To make the underwater base, create a <strong>Color Fill</strong> layer and pick the color <code>#205265</code>.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-1.jpg" alt="make underwater base"/></p>
+
+<p>Use the <strong>Rectangular Marquee Tool (M)</strong> to grab the upper half of the cyan canvas. Select the layer mask and turn the foreground to white. Click <strong>Delete</strong> to reveal the sky.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-1a.jpg" alt="sky masking"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-1b.jpg" alt="sky masking result"/></p>
+
+<h3 id="toc_10">Step 2</h3>
+
+<p>Add a <strong>Curves</strong> adjustment layer to increase the lightness for the upper left. On its mask, use a soft black brush to paint on the rest.</p>
+
+<p>添加<strong>曲线</strong>调整图层以增加左上角的亮度。 在蒙版上，使用软的黑色笔刷在上面适当调整。</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-2.jpg" alt="base curves"/></p>
+
+<h3 id="toc_11">Step 3</h3>
+
+<p>Use another <strong>Curves</strong> adjustment layer to brighten the upper left a bit. Paint on the rest so it will not be affected by this adjustment layer.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-3.jpg" alt="base curves 2"/></p>
+
+<h3 id="toc_12">Step 4</h3>
+
+<p>Open the sea image and place it above the underwater base. Use the <strong>Free Transform Tool (Control-T)</strong> to make it much narrower to fit the sea&#39;s perspective.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-4.jpg" alt="add sea"/></p>
+
+<p>Use a layer mask and a medium-hard black brush to remove the hard edges, remembering to follow the movement of the waves to achieve a more believable result.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-4a.jpg" alt="sea masking"/></p>
+
+<h3 id="toc_13">Step 5</h3>
+
+<p>Add a <strong>Hue/Saturation</strong> adjustment layer to desaturate the sea&#39;s color. Change the <strong>Saturation</strong> value to <strong>-66</strong>:</p>
+
+<p>添加色相/饱和度调整图层调整大海的颜色。 将饱和度值更改为-66：</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-5.jpg" alt="sea hue saturation"/></p>
+
+<h3 id="toc_14">Step 6</h3>
+
+<p>Use a <strong>Color Balance</strong> adjustment layer to match the sea&#39;s surface with the underwater base.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-6.jpg" alt="sea color balance"/></p>
+
+<h3 id="toc_15">Step 7</h3>
+
+<p>Create a <strong>Curves</strong> adjustment layer to darken the right of the surface. Paint on the left so it will not be affected by this adjustment layer.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-7.jpg" alt="sea curves"/></p>
+
+<h3 id="toc_16">Step 8</h3>
+
+<p>Make a new layer and use a medium-soft white brush with a small size (about <strong>10-12 px</strong>) to paint the stroke along the surface to define the surface better.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-8.jpg" alt="sea line"/></p>
+
+<h3 id="toc_17">Step 9</h3>
+
+<p>Open the grass image. Select the grass part only and add it to the lowest area of the underwater sea. Change this layer mode to <strong>Soft Light 100%</strong>.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-9.jpg" alt="add grass"/></p>
+
+<p>Use a layer mask to blend the grass&#39;s background with the sea.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-9a.jpg" alt="grass masking"/></p>
+
+<h3 id="toc_18">Step 10</h3>
+
+<p>Go to <strong>Filter &gt; Blur &gt; Gaussian Blur</strong> and set the <strong>Radius</strong> to <strong>6 px</strong>:</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-10.jpg" alt="grass gaussian blur"/></p>
+
+<p>On this filter mask, use a soft black brush to erase the background and leave the foreground blurred. This is to create some depth of field.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-10a.jpg" alt="grass gaussian blur masking"/></p>
+
+<h3 id="toc_19">Step 11</h3>
+
+<p>Use a <strong>Hue/Saturation</strong> adjustment layer to match the color of the grass with the background.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish2-11.jpg" alt="grass hue saturation"/></p>
+
+<h2 id="toc_20">3. How to Add the Boat</h2>
+
+<h3 id="toc_21">Step 1</h3>
+
+<p>Isolate the boat and add it to the lower right of the underwater area.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish3-1.jpg" alt="add boat"/></p>
+
+<p>Use a layer mask to blend the boat with the grassy ground. Don&#39;t worry if it does not look good—we&#39;ll fix it later.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish3-1a.jpg" alt="boat masking"/></p>
+
+<h3 id="toc_22">Step 2</h3>
+
+<p>Create a <strong>Curves</strong> adjustment layer to darken the boat.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish3-2.jpg" alt="boat curves 1"/></p>
+
+<h3 id="toc_23">Step 3</h3>
+
+<p>Use another <strong>Curves</strong> adjustment layer to change the contrast of the boat. It&#39;s under the water so should be less obvious. The selected area on the lower right shows where to paint on the layer mask.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish3-3.jpg" alt="boat curves 2"/></p>
+
+<h3 id="toc_24">Step 4</h3>
+
+<p>Add a <strong>Hue/Saturation</strong> adjustment layer and bring the <strong>Saturation</strong> value down to <strong>-94</strong>.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish3-4.jpg" alt="boat hue saturation"/></p>
+
+<h3 id="toc_25">Step 5</h3>
+
+<p>Use a <strong>Color Fill</strong> layer and pick a similar color to the underwater background (<code>#255465</code>). Lower the <strong>Opacity</strong> of this layer to <strong>60%</strong>. It helps to blend the boat with the background completely.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish3-5.jpg" alt="boat color fill"/></p>
+
+<h2 id="toc_26">4. How to Add the Tree</h2>
+
+<h3 id="toc_27">Step 1</h3>
+
+<p>Isolate the tree from the background and place it above the boat. Set the tree layer under the boat one, and use a layer mask to remove the middle section above and below the surface, the part under the boat, and the part towards the left. The idea is to make the tree look as if it&#39;s growing from the boat.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish4-1.jpg" alt="add tree"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish4-1a.jpg" alt="tree masking"/></p>
+
+<h3 id="toc_28">Step 2</h3>
+
+<p>Add a <strong>Color Fill</strong> layer and pick the color <code>#0e5c72</code> to blend the part under the water with the background. Lower the <strong>Opacity</strong> of this layer to <strong>50%</strong> and erase the part above the water&#39;s surface.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish4-2.jpg" alt="tree color fill"/></p>
+
+<h3 id="toc_29">Step 3</h3>
+
+<p>Create a <strong>Color Balance</strong> adjustment layer and change the <strong>Highlights</strong> settings to increase the vibrant red/gold of the upper part of the tree. The lower part should be erased.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish4-3.jpg" alt="tree color balance"/></p>
+
+<h3 id="toc_30">Step 4</h3>
+
+<p>The tree looks too dark, so add a <strong>Curves</strong> adjustment layer and increase the lightness. On this layer mask, use a medium-hard black brush to erase the right side of the trunk and branches to fit the light from the left.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish4-4.jpg" alt="tree curves"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish4-4a.jpg" alt="tree curves masking"/></p>
+
+<h3 id="toc_31">Step 5</h3>
+
+<p>Use a <strong>Levels</strong> adjustment layer to strengthen the highlight on the tree. Apply painting on the mask as we did in the previous step.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish4-5.jpg" alt="tree leaves"/></p>
+
+<h2 id="toc_32">5. How to Add the Fish</h2>
+
+<h3 id="toc_33">Step 1</h3>
+
+<p>Cut out the fish and place it above the tree. Use a layer mask with a hard black brush to reveal the branches on the right. Now it looks as if the fish is stuck in the tree!</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-1.jpg" alt="add fish"/></p>
+
+<h3 id="toc_34">Step 2</h3>
+
+<p>Make a <strong>Hue/Saturation</strong> adjustment layer and reduce the <strong>Saturation</strong> value to <strong>-43</strong>.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-2.jpg" alt="fish hue saturation"/></p>
+
+<h3 id="toc_35">Step 3</h3>
+
+<p>Add a <strong>Curves</strong> adjustment layer to brighten the fish as it&#39;s too dark now. Paint on the right where it&#39;s hidden from the light source.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-3.jpg" alt="fish curves 1"/></p>
+
+<h3 id="toc_36">Step 4</h3>
+
+<p>Create a new layer, change the mode to <strong>Overlay 100%</strong>, and fill with <strong>50%</strong> gray. Use the <strong>Dodge</strong> and <strong>Burn Tool (O)</strong> with <strong>Midtones Range</strong> and <strong>Exposure</strong> about <strong>15-20%</strong> to brighten the stroke part of the fish and eye and darken the hidden details in his mouth. You can see how I did it with <strong>Normal</strong> mode and the result with <strong>Overlay</strong> mode.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-4.jpg" alt="fish DB"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-4a.jpg" alt="DB result"/></p>
+
+<h3 id="toc_37">Step 5</h3>
+
+<p>Make a new layer under the fish layer and above the tree one. Use a soft black brush with the <strong>Opacity</strong> about <strong>30%</strong> to paint the shadow of the lower fin on the tree.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-5.jpg" alt="fish shadow"/></p>
+
+<h3 id="toc_38">Step 6</h3>
+
+<p>To make a shadow of the branches on the fish, make a new layer above the fish one. Hold <strong>Control</strong> and click the tree thumbnail layer to load its selection. Fill this selection with black and move it to the right a bit (as the light comes from the left).</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-6.jpg" alt="tree shadow"/></p>
+
+<p>Lower the <strong>Opacity</strong> to <strong>40%</strong> and use a layer mask to clear the unnecessary shadow areas outside the fish.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-6a.jpg" alt="tree shadow masking"/></p>
+
+<h3 id="toc_39">Step 7</h3>
+
+<p>Apply a <strong>Gaussian Blur</strong> of <strong>5 px</strong> to soften the shadow.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish5-7.jpg" alt="soften shadow"/></p>
+
+<h2 id="toc_40">6. How to Add the Leaves</h2>
+
+<h3 id="toc_41">Step 1</h3>
+
+<p>Open the leaves image. Use the <strong>Move Tool</strong> to select the leaf you like and add it to the lower left of the water. Use <strong>Control-T</strong> with <strong>Warp</strong> mode to tweak it to make it look more dynamic and interesting.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-1.jpg" alt="add leaf"/></p>
+
+<h3 id="toc_42">Step 2</h3>
+
+<p>Apply a <strong>Gaussian Blur</strong> of <strong>8 px</strong> to this leaf.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-2.jpg" alt="leaf gaussian blur"/></p>
+
+<h3 id="toc_43">Step 3</h3>
+
+<p>Add more leaves around the fish, under the water, above the surface, and in the sky. You can vary the form, blurriness, distance, and movement of them to increase the dynamism and depth of the scene.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-3.jpg" alt="add more leaves"/></p>
+
+<h3 id="toc_44">Step 4</h3>
+
+<p>Select all the leaves layers and press <strong>Control-G</strong> to make a group for them. Change this group&#39;s mode to <strong>Normal 100%</strong> and add a <strong>Hue/Saturation</strong> adjustment layer within the group to desaturate the leaves.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-4.jpg" alt="leaves hue saturation"/></p>
+
+<h3 id="toc_45">Step 5</h3>
+
+<p>Create a <strong>Channel Mixer</strong> adjustment layer to turn the color of the leaves which are under the water into cyan. Erase the ones above the surface to keep their yellow color.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-5.jpg" alt="leaves channel mixer  red"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-5a.jpg" alt="leaves channel mixer blue"/></p>
+
+<h3 id="toc_46">Step 6</h3>
+
+<p>Make a <strong>Curves</strong> adjustment layer to brighten the leaves on the left of the scene. Paint on the rest of the leaves as they&#39;re in the dark area or far from the light.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-6.jpg" alt="leaves curves 1"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-6a.jpg" alt="leaves curves 1 masking"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-6b.jpg" alt="leaves curves 1 masking result"/></p>
+
+<h3 id="toc_47">Step 7</h3>
+
+<p>Use another <strong>Curves</strong> adjustment layer to darken the leaves under the water, in the right corner of the sky.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-7.jpg" alt="leaves curves 2"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-7a.jpg" alt="leaves curves 2 masking"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish6-7b.jpg" alt="leaves curves 2 masking result"/></p>
+
+<h2 id="toc_48">7. How to Add the Bird</h2>
+
+<h3 id="toc_49">Step 1</h3>
+
+<p>Isolate the bird and add him to the left side of the scene.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish7-1.jpg" alt="add bird"/></p>
+
+<h3 id="toc_50">Step 2</h3>
+
+<p>Use a <strong>Color Balance</strong> adjustment layer to change the bird&#39;s color:</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish7-2.jpg" alt="bird color balance"/></p>
+
+<h3 id="toc_51">Step 3</h3>
+
+<p>Add a <strong>Curves</strong> adjustment layer to reduce the light on the lower body and the hidden areas. The selected parts show where to paint on the layer mask.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish7-3.jpg" alt="bird curves"/></p>
+
+<h2 id="toc_52">8. How to Paint the Bubbles</h2>
+
+<h3 id="toc_53">Step 1</h3>
+
+<p>Change the foreground to a very light cyan color (<code>#c2cfd5</code>) and activate the bubble brushes. Choose the one you like (I&#39;ve chosen <strong>93</strong>) and press <strong>F5</strong> to change the brush settings:</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish8-1.jpg" alt="bubble brush settings"/></p>
+
+<p>Paint the tiny bubbles along the flow of the falling leaves. You can reduce or increase the brush&#39;s size by holding <strong>[</strong> or <strong>]</strong>.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish8-1a.jpg" alt="paint bubbles"/></p>
+
+<h3 id="toc_54">Step 2</h3>
+
+<p>Use the same brush with a lowered <strong>Opacity</strong> (about <strong>60-70%</strong>) to paint bigger bubbles on the edges, and soften the bubbles with a <strong>Gaussian Blur</strong> filter.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish8-2.jpg" alt="paint more bubbles"/></p>
+
+<h2 id="toc_55">9. How to Make the Final Adjustments</h2>
+
+<h3 id="toc_56">Step 1</h3>
+
+<p>Create a <strong>Gradient Map</strong> adjustment layer on top of the layers and pick the colors <code>#1b243f</code> and <code>#f8b884</code>. Change this layer mode to <strong>Soft Light 100%</strong>.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish9-1.jpg" alt="gradient map"/></p>
+
+<h3 id="toc_57">Step 2</h3>
+
+<p>Make a new layer and use a soft brush with the color <code>#1f0b01</code> to paint on the left horizon. Alter the mode to <strong>Linear Dodge 100%</strong>.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish9-2.jpg" alt="paint light 1"/></p>
+
+<h3 id="toc_58">Step 3</h3>
+
+<p>Use a yellow color (<code>#efa67e</code>) to strengthen the light on the left. Set this layer mode to <strong>Overlay 100%</strong>:</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish9-3.jpg" alt="paint light 2"/></p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish9-3a.jpg" alt="light 2 overlay mode"/></p>
+
+<h3 id="toc_59">Step 4</h3>
+
+<p>Create a <strong>Curves</strong> adjustment layer to increase the light on the left. Paint on the rest of the scene so it will not be affected by this adjustment layer.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish9-4.jpg" alt="whole scene curves 1"/></p>
+
+<h3 id="toc_60">Step 5</h3>
+
+<p>Add another <strong>Curves</strong> adjustment layer to strengthen the shadow on the right.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish9-5.jpg" alt="whole scene curves 2"/></p>
+
+<p>Advertisement</p>
+
+<h3 id="toc_61">Step 6</h3>
+
+<p>The last step: Use a <strong>Vibrance</strong> adjustment layer to enhance the final effect.</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish9-6.jpg" alt="vibrance"/></p>
+
+<h2 id="toc_62">Congratulations, You&#39;re Done!</h2>
+
+<p>I hope that you&#39;ve enjoyed my tutorial and learned something new. Feel free to share your ideas or comments in the box below—I&#39;d love to see them. Enjoy Photoshopping!</p>
+
+<p><img src="https://cms-assets.tutsplus.com/uploads/users/723/posts/27602/image/fish-final.jpg" alt="final result"/></p>
+
+      </div>
+
+      <div class="row">
+        <div class="large-6 columns">
+        <p class="text-left" style="padding:15px 0px;">
+      
+          <a href="14890297999074.html" 
+          title="Previous Post: C4D插件总结">&laquo; C4D插件总结</a>
+      
+        </p>
+        </div>
+        <div class="large-6 columns">
+      <p class="text-right" style="padding:15px 0px;">
+      
+          <a  href="14882747668644.html" 
+          title="Next Post: 使用圆形网格创建一个猫头鹰图案">使用圆形网格创建一个猫头鹰图案 &raquo;</a>
+      
+      </p>
+        </div>
+      </div>
+      <div class="comments-wrap">
+        <div class="share-comments">
+          
+
+          
+
+          
+        </div>
+      </div>
+    </div><!-- article-wrap -->
+  </div><!-- large 8 -->
+
+
+
+
+ <div class="large-4 medium-4 columns">
+  <div class="hide-for-small">
+    <div id="sidebar" class="sidebar">
+          <div id="site-info" class="site-info">
+            
+                <div class="site-a-logo"><img src="asset/img/icon.jpg" /></div>
+            
+                <h1>Glen</h1>
+                <div class="site-des">设计师、代码鼓捣者、喜欢节奏感、Dota老狗</div>
+                <div class="social">
+<a class="facebook" href="https://www.facebook.com/profile.php?id=100013395165605" title="Facebook">Facebook</a>
+
+
+
+<a class="pinterest" href="https://www.pinterest.com/bjsywj/" title="Pinterest">Pinterest</a>
+
+
+<a class="weibo" target="_blank" href="http://weibo.com/2182848997/profile?topnav=1&wvr=6" title="weibo">Weibo</a>
+<a class="twitter" target="_blank" href="https://twitter.com/Glen__Y" title="Twitter">Twitter</a>
+
+
+
+                
+              	 </div>
+          	</div>
+              <div id="site-categories" class="side-item ">
+                <div class="side-header">
+                  <h2>分类</h2>
+                </div>
+                <div class="side-content">
+
+      	<p class="cat-list">
+        
+            <a href="%E8%AE%BE%E8%AE%A1.html"><strong>设计</strong></a>
+        
+            <a href="%E4%BA%A7%E5%93%81.html"><strong>产品</strong></a>
+        
+            <a href="Logo.html"><strong>Logo</strong></a>
+        
+            <a href="%E5%B7%A5%E5%85%B7.html"><strong>工具</strong></a>
+        
+            <a href="%E6%9D%82%E8%B0%88.html"><strong>杂谈</strong></a>
+        
+            <a href="Framer.html"><strong>Framer</strong></a>
+        
+            <a href="%E4%BA%A4%E4%BA%92.html"><strong>交互</strong></a>
+        
+            <a href="%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F.html"><strong>微信小程序</strong></a>
+        
+            <a href="%E5%93%81%E7%89%8C.html"><strong>品牌</strong></a>
+        
+            <a href="Hbuilder.html"><strong>Hbuilder</strong></a>
+        
+            <a href="%E4%BB%A3%E7%A0%81.html"><strong>代码</strong></a>
+        
+            <a href="C4D.html"><strong>C4D</strong></a>
+        
+            <a href="Sketch.html"><strong>Sketch</strong></a>
+        
+            <a href="%E7%94%BB%E7%94%BB.html"><strong>画画</strong></a>
+         
+        </p>
+
+
+                </div>
+              </div>
+
+              <div id="site-categories" class="side-item">
+                <div class="side-header">
+                  <h2>最近文章</h2>
+                </div>
+                <div class="side-content">
+                <ul class="posts-list">
+	      
+		      
+			      <li class="post">
+			        <a href="15142442783493.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15136029944353.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15131264893113.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15126209730514.html"></a>
+			      </li>
+		     
+		  
+		      
+			      <li class="post">
+			        <a href="15113682000264.html"></a>
+			      </li>
+		     
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		  
+		      
+		   
+		  		</ul>
+                </div>
+              </div>
+        </div><!-- sidebar -->
+      </div><!-- hide for small -->
+</div><!-- large 4 -->
+
+</div><!-- row -->
+
+ <div class="page-bottom clearfix">
+  <div class="row">
+   <p class="copyright">Copyright &copy; 2016
+Powered by Glen&nbsp;</p>
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+
+  
+    
+
+    <script src="asset/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+      function fixSidebarHeight(){
+        var w1 = $('.markdown-body').height();
+          var w2 = $('#sidebar').height();
+          if (w1 > w2) { $('#sidebar').height(w1); };
+      }
+      $(function(){
+        fixSidebarHeight();
+      })
+      $(window).load(function(){
+          fixSidebarHeight();
+      });
+     
+    </script>
+
+    
+
+
+
+  </body>
+</html>
